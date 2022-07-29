@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Quick-AccessMenu2.1
+// @name Quick-AccessMenu-nekonya2.1
 // @namespace https://www.bondageprojects.com/
 // @version 1.5.0.
 // @description Everything you'll ever need for BC
@@ -5749,7 +5749,7 @@ async function NEWmenu() {
             ElementValue("InputChat", content.replace('@', "?"));
             OLDmenu();
             return;
-        } else if (tenorRe.test(ElementValue("InputChat"))) {
+        } /** else if (tenorRe.test(ElementValue("InputChat"))) {
             if (ChatRoomTargetMemberNumber == null) {
                 sendHiddenMessageAll(content);
             } else {
@@ -5802,7 +5802,7 @@ async function NEWmenu() {
             }
             ElementRemove("InputChat");
             return;
-        }
+        }*/
 
         //	DO NOT add new commands past this point.
 
