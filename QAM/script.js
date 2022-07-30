@@ -5901,7 +5901,7 @@ async function NEWmenu() {
 
 function Neko_ChatRoomSendLocal(text) {
     ChatRoomSendLocal(
-        "<div style='magic: 1.2em 0px'>" +
+        "<div style='margin: 1.2em 0px'>" +
             text +
         "</div>"
     );
@@ -6654,7 +6654,7 @@ function M_MOANER_sendMessageToWearer(msg) {
     //     }],
     // });
     ChatRoomSendLocal(
-        "<span style='color:#9289EA'>&#40;" + "来自QAM" + "&#58;&#32;" + msg + "&#41;</span>"
+        "<span style='color:#5fbd7a'>&#40; " + msg + "&#41;</span>"
     );
 }
 
