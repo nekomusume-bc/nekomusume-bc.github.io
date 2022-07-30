@@ -15,6 +15,15 @@
 // ==/UserScript==
 (typeof OLDmenu !== "undefined") && (ChatRoomSendChat = OLDmenu); //reset
 async function NEWmenu() {
+
+    function Neko_ChatRoomSendLocal(text) {
+        Neko_ChatRoomSendLocal(
+            "<div style='margin: 1.2em 0px;color:#2bbd7a'>" +
+                text +
+            "</div>"
+        );
+    }
+
     var content = ElementValue("InputChat").trim();
     //var tmpname = Player.Nickname;
 
@@ -5899,14 +5908,6 @@ async function NEWmenu() {
     }
 }
 
-function Neko_ChatRoomSendLocal(text) {
-    ChatRoomSendLocal(
-        "<div style='margin: 1.2em 0px'>" +
-            text +
-        "</div>"
-    );
-}
-
 //if modified code above is not called, use original.
 var OLDmenu = ChatRoomSendChat;
 var ChatRoomSendChat = NEWmenu;
@@ -5917,14 +5918,17 @@ var ChatRoomSendChat = NEWmenu;
 ChatCommandGreeting = function (data) {
     if (CurrentScreen == "ChatRoom" && data.Content == "ServerEnter") {
         Player.RestrictionSettings.BypassNPCPunishments = true;
-        Neko_ChatRoomSendLocal(
+        ChatRoomSendLocal(
+            "<div style='margin:1.2em 0px'>" +
                 "Quick-AccessMenu2 - version 1.5.0: 已加载, 输入 <b>/help</b> 显示基本菜单.\n" +
                 "使用 <b>/help new</b> 显示当前 QAM 的所更改的信息.\n" +
-                "有人任何问题, 可加入 <a href='https://discord.gg/YukepB6RVp' target='_blank'>https://discord.gg/YukepB6RVp</a>\n" +
+                "原作者的留的 <a href='https://discord.gg/YukepB6RVp' target='_blank'>https://discord.gg/YukepB6RVp</a>\n" +
                 "提示: NPC 惩罚已禁用.\n" +
                 "若要查看 BC 原本帮助或 BCE(若安装过) 帮助请使用: <b>/clubhelp</b>.\n" +
                 "<b style='color:red'>此 QAM 被猫做了一些简易的修改, 可能会存在一些问题.</b>\n" +
-                "<b style='color:red'>原作者 <a href='https://github.com/tetris245/tetris245' target='_blank'>(tetris245)</a>的版本.</b>"
+                "<b style='color:red'>原作者 <a href='https://github.com/tetris245/tetris245' target='_blank'>(tetris245)</a>的版本.</b>\n" +
+                "<b style='color:red'><a href='https://github.com/tetris245/tetris245/wiki' target='_blank'>原作者写的使用文档.</a>" +
+            "</div>"
         );
         ServerSocket.off('ChatRoomMessage', ChatCommandGreeting)
     }
