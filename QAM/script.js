@@ -5909,18 +5909,23 @@ ChatCommandGreeting = function (data) {
     if (CurrentScreen == "ChatRoom" && data.Content == "ServerEnter") {
         Player.RestrictionSettings.BypassNPCPunishments = true;
         ChatRoomSendLocal(
-            "Quick-AccessMenu2 - version 1.5.0: Ready, type <b>/help</b> for general menu.\n" +
-            "Use <b>/help new</b> to get info about changes in current QAM version.\n" +
-            "For any inquiries, join https://discord.gg/YukepB6RVp\n" +
-            "Note: NPC punishments are disabled."
+            "Quick-AccessMenu2 - version 1.5.0: 已加载, 输入 <b>/help</b> 显示基本菜单.\n" +
+            "使用 <b>/help new</b> 显示当前 QAM 的所更改的信息.\n" +
+            "有人任何问题, 可加入 https://discord.gg/YukepB6RVp\n" +
+            "提示: NPC 惩罚已禁用.\n" +
+            "若要查看 BC 原本帮助或 BCE(若安装过) 帮助请使用: <b>/clubhelp</b>.\n" +
+            "<b style='color:red'>此 QAM 被猫做了一些简易的修改, 可能会存在一些问题.</b>\n" +
+            "<b style='color:red'>原作者 <a href='https://github.com/tetris245/tetris245' target='_blank'>(tetris245) </a> 的版本.</b>"
         );
         ServerSocket.off('ChatRoomMessage', ChatCommandGreeting)
     }
 }
 
+
 setTimeout(function () {
     ServerSocket.on('ChatRoomMessage', ChatCommandGreeting);
 }, 5000);
+
 
 //AutoRelog/AntiDisconnect
 function LoginDoLogin() { //rewrite login to variabilize credentials for later use
