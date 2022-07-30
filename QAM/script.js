@@ -3203,21 +3203,23 @@ async function NEWmenu() {
             LogAdd("BondageCollege", "Import");
             LogAdd("KidnapSophie", "Sarah");
             ChatRoomSendLocal("Quick-AccessMenu2: A few things have to be set manually. See the /roleplay and /rolequit commands.");
-        } else if (content.indexOf("/moaner") == 0) {
+        } 
+        
+        else if (content.indexOf("/moaner") == 0) {
             if (content.endsWith("/moaner")) {
                 ChatRoomSendLocal(
-                    "<b>Quick-AccessMenu2</b>: Several actions are possible with the moaner command:\n" +
-                    "<b>/moaner on</b> = starts the moaner\n" +
-                    "<b>/moaner off</b> = stops the moaner\n" +
-                    "<b>/moaner profile</b> (profilename) =  selects a moaner profile. Without profilename, access to moaner profile help\n" +
-                    "<b>/moaner status</b> = displays current moaner status\n" +
-                    "<b>/moaner verbose</b> (on/off) = enable/disable verbose mode\n" +
+                    "<b>Quick-AccessMenu2</b>: 关于 moaner:\n" +
+                    "<b>/moaner on</b> 开启涩涩的叫声.\n" +
+                    "<b>/moaner off</b> 关掉涩涩的叫声.\n" +
+                    "<b>/moaner profile [name]</b> 无任何参数列出所有可用配置. 如果后面跟配置名,则切换到你选择的呻吟方案.\n" +
+                    "<b>/moaner status</b> 显示当前 Moaner 的状态.\n" +
+                    "<b>/moaner verbose &lt; on|off &gt;</b> 启用或关闭更详细的帮助信息.\n" +
                     " \n" +
-                    "You can also enable/disable parts of the Moaner with:\n" +
-                    "<b>/moaner orgasm</b> (on/off): moans when you cum\n" +
-                    "<b>/moaner spank</b> (on/off): moans when you are spanked\n" +
-                    "<b>/moaner talk</b> (on/off): moans when talking if vibed\n" +
-                    "<b>/moaner vibe</b> (on/off): moans when vibes settings changed"
+                    "你可以通过下面的方法启用或关闭 Monaer 的部分功能:\n" +
+                    "<b>/moaner orgasm &lt; on|off &gt;</b> : 开启或关闭高潮时发出涩涩的声音.\n" +
+                    "<b>/moaner spank &lt; on|off &gt;</b>: 开启或关闭被击打时发出涩涩的声音.\n" +
+                    "<b>/moaner talk &lt; on|off &gt;</b>: 开启或关闭谈话时发出涩涩的声音\n" +
+                    "<b>/moaner vibe &lt; on|off &gt;</b>: 开启或关闭震动玩具模式改变时发出涩涩的声音"
                 );
             } else {
                 var stringMoan1 = content;
@@ -3256,7 +3258,9 @@ async function NEWmenu() {
                     }
                 }
             }
-        } else if (content.indexOf("/money") == 0) {
+        } 
+        
+        else if (content.indexOf("/money") == 0) {
             Player.Money = content.substring(6);
             ServerPlayerSync();
         } else if (content.indexOf("/naked") == 0) {
@@ -5749,7 +5753,11 @@ async function NEWmenu() {
             ElementValue("InputChat", content.replace('@', "?"));
             OLDmenu();
             return;
-        } /** else if (tenorRe.test(ElementValue("InputChat"))) {
+        } 
+        
+        /** 
+         * 会和 BCE 冲突
+         * else if (tenorRe.test(ElementValue("InputChat"))) {
             if (ChatRoomTargetMemberNumber == null) {
                 sendHiddenMessageAll(content);
             } else {
@@ -5776,7 +5784,10 @@ async function NEWmenu() {
             }
             ElementRemove("InputChat");
             return;
-        } else if (tubeRe.test(ElementValue("InputChat"))) {
+        } */
+        
+        // 解析 YouTube 视频
+        else if (tubeRe.test(ElementValue("InputChat"))) {
             if (ChatRoomTargetMemberNumber == null) {
                 sendHiddenMessageAll(content);
             } else {
@@ -5802,7 +5813,7 @@ async function NEWmenu() {
             }
             ElementRemove("InputChat");
             return;
-        }*/
+        }
 
         //	DO NOT add new commands past this point.
 
@@ -6224,6 +6235,8 @@ var backupChatRoomFirstTimeHelp;*/
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var M_MOANER_scriptOn = true;
+var M_MOANER_lang = "zh";
+
 let backupChatRoomMessage = ChatRoomMessage;
 
 function M_MOANER_MoanerInitAlteredFns() {
@@ -6316,16 +6329,16 @@ var M_MOANER_spankActive = true;
 var M_MOANER_verboseActive = true;
 var M_MOANER_firstHelpSeen = false;
 
-var M_MOANER_scriptStatus = ["The moaner is active.", "The moaner is not active."];
-var M_MOANER_orgasmStatus = ["The orgasm moan is active. You will moan while cumming.", "The orgasm moan is not active. You will not moan while cumming anymore."];
-var M_MOANER_vibratorStatus = ["The vibes moan is active. If your vibrator's setting changes, you will moan.", "The vibes moan is not active. If your vibrator's setting changes, you will not moan."];
-var M_MOANER_spankStatus = ["The spank moan is active. You will moan while being spanked.", "The spank moan is not active. You will not moan while being spanked."];
-var M_MOANER_talkStatus = ["The talk moan is active. If you're vibed, you will moan while speaking.", "The talk moan is not active. If you're vibed, you will not moan while speaking anymore."];
-var M_MOANER_verboseStatus = ["Moaner is verbose.", "Moaner is not verbose."];
-var M_MOANER_profileStatus = ["No custom profile loaded.", "Current moans profile: "];
-var M_MOANER_profileListM_MOANER_intro = "Available moaning profiles: ";
+var M_MOANER_scriptStatus = ["Moaner 已启用.", "Moaner 已关闭."];
+var M_MOANER_orgasmStatus = ["高潮呻吟已启用. 在你高潮时会发出奇怪涩涩的叫声.", "高潮呻吟已关闭. 你可以安静享受高潮了."];
+var M_MOANER_vibratorStatus = ["震动呻吟已启用. 在你的震动玩具被调节时你会忍不住叫出来.", "震动呻吟已关闭. 修改你的震动玩具时, 你可以安静的期待了."];
+var M_MOANER_spankStatus = ["拍打叫声已启用, 你在被拍打时会发出涩涩地声音.", "拍打涩涩声已经关闭, 你可以安静地被打了(bushi)."];
+var M_MOANER_talkStatus = ["谈话呻吟已启用. 呻吟会中断你的谈话, 已输入的文字会随着呻吟强制发出.", "谈话呻吟已关闭. 你可以好好说话了."];
+var M_MOANER_verboseStatus = ["显示更详细的信息.", "显示简短的信息."];
+var M_MOANER_profileStatus = ["无已加载的自定义配置.", "当前涩涩声: "];
+var M_MOANER_profileListM_MOANER_intro = "可用的涩涩声: ";
 
-var M_MOANER_intro = "Myrhanda Moaner installed. Type /moaner for more info, /moaner status for current status.";
+var M_MOANER_intro = "Moaner 已经安装. 输入 /moaner 查看更多信息, 输入 /moaner status 查看当前状态.";
 
 function M_MOANER_initControls() {
     var datas = JSON.parse(localStorage.getItem(M_MOANER_moanerKey + "_" + Player.MemberNumber));
@@ -7123,6 +7136,41 @@ function IsStimulated(C) {
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// 仅在被主人玩弄时启用
+ownerOnly = {
+    "hot": [],
+    "medium": [],
+    "light": [],
+    "low": [],
+    "orgasm": [],
+    "pain": []
+}
+
+// 仅在被恋人玩弄时启用
+loverOnly = {
+    "hot": [],
+    "medium": [],
+    "light": [],
+    "low": [],
+    "orgasm": [],
+    "pain": []
+}
+
+// 支配者方案（可手动切换）
+domMoans = {
+}
+
+// 顺从着方案（可手动切换）
+subMoans = {
+
+}
+
+// RBQ 方案 ~  
+RBQ_Moans = {
+
+}
+
+// 给果果的
 honokaMoans = {
     "hot": [],
     "medium": [],
@@ -7133,6 +7181,7 @@ honokaMoans = {
 }
 M_MOANER_addMoansProfile("honoka", honokaMoans);
 
+// 暴躁紫猫版
 vnekoMoans = {
     "hot": [],
     "medium": [],
@@ -7143,6 +7192,7 @@ vnekoMoans = {
 }
 M_MOANER_addMoansProfile("vneko", vnekoMoans);
 
+// 温顺蓝猫版
 nekonyaMoans = {
     "hot": ["嗯... 喵呜♥", "咕噜咕噜~", "嗯~呼~!", "喵❤~~~"],
     "medium": ["姆", "啊❤", "喵啊❤"],
