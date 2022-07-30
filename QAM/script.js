@@ -23,7 +23,7 @@ async function NEWmenu() {
 
         if (content.indexOf("/help") == 0) {
             if (content.endsWith("/help")) {
-                ChatRoomSendLocal(
+                Neko_ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: QAM help is organized into categories. Use <b>/help</b> (category). List of categories:\n" +
                     "<b>bondage</b> = commands related to bondage.\n" +
                     "<b>character</b> = commands related to your character.\n" +
@@ -5901,7 +5901,7 @@ async function NEWmenu() {
 
 function Neko_ChatRoomSendLocal(text) {
     ChatRoomSendLocal(
-        "<div style='background:#616681;color:#82ffa4'>" +
+        "<div style='magic: 1.2em 0px'>" +
             text +
         "</div>"
     );
