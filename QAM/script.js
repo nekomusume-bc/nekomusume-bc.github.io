@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Quick-AccessMenu-nekonya2.1
+// @name Quick-AccessMenu2.1
 // @namespace https://www.bondageprojects.com/
 // @version 1.5.0.
 // @description Everything you'll ever need for BC
@@ -35,10 +35,10 @@ async function NEWmenu() {
                     "<b>talking</b> = commands related to talking.\n" +
                     "<b>visual</b> = commands related to animations and background.\n" +
                     "<b>zones</b> = commands related to game zones.\n" +
-		    " \n" +
-		    "Use <b>/help new</b> to get info about changes in current QAM version.\n" +
-		    " \n" +
-		    "Several commands require to specify a target. It can be a real name or a member number."	
+                    " \n" +
+                    "Use <b>/help new</b> to get info about changes in current QAM version.\n" +
+                    " \n" +
+                    "Several commands require to specify a target. It can be a real name or a member number."
                 );
             } else if (content.includes("bondage")) {
                 ChatRoomSendLocal(
@@ -59,8 +59,8 @@ async function NEWmenu() {
                     "<b>/maxstatistics</b> = gives max statistics.\n" +
                     "<b>/money</b> (value) = gives or takes money.\n" +
                     "<b>/name</b> (newnamehere) = temporary new nickname.\n" +
-		    "<b>/npcpunish</b> = enables/disables NPC punishments.\n" +
-		    "<b>/permission</b> (number) = changes your item permission *\n" +
+                    "<b>/npcpunish</b> = enables/disables NPC punishments.\n" +
+                    "<b>/permission</b> (number) = changes your item permission *\n" +
                     "<b>/reputation</b> (reputation) (level) = changes a reputation. *\n" +
                     "<b>/resetinventory</b> = erases your inventory. Will warn first.\n" +
                     "<b>/roleplay</b> (rolehere) = starts a role. *\n" +
@@ -110,7 +110,7 @@ async function NEWmenu() {
                     "<b>Quick-AccessMenu2</b>: Fun commands:\n" +
                     "<b>/cum</b> = causes an orgasm.\n" +
                     "<b>/moaner</b> = moans when horny and stimulated. Using will give more info.\n" +
-		    "<b>/sleep</b> (target) = uses the sleeping pill on yourself or another player.\n" +
+                    "<b>/sleep</b> (target) = uses the sleeping pill on yourself or another player.\n" +
                     "<b>/superdice</b> (sides)  = rolls a superdice. Sides can be between 2 and 999999999."
                 );
             } else if (content.includes("lock")) {
@@ -156,30 +156,30 @@ async function NEWmenu() {
                     "<b>/relog</b> = relogs.\n" +
                     "<b>/unrestrict</b> =  removes all restrictions from game. Can use maid drink tray/other stuff. Using will give more info. Submissives should use /unrestrict soft."
                 );
-	    } else if (content.includes("new")) {
+            } else if (content.includes("new")) {
                 ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: Main changes in v.1.5.0:\n" +
-		    "- New commands: hear, s1, s2, s3, s4, see, sleep, stutter, talk.\n" +
-		    "- Renamed the old gagtalk command as gagcode and improved it by using lillyBC gagspeak function.\n" +
-		    "- Merged the gaglight and gagheavy commands into the new version of gagtalk command.\n" +
-		    "- Improved the outfit command with the awsave and awload options (thanks to huzpsb).\n" +
+                    "- New commands: hear, s1, s2, s3, s4, see, sleep, stutter, talk.\n" +
+                    "- Renamed the old gagtalk command as gagcode and improved it by using lillyBC gagspeak function.\n" +
+                    "- Merged the gaglight and gagheavy commands into the new version of gagtalk command.\n" +
+                    "- Improved the outfit command with the awsave and awload options (thanks to huzpsb).\n" +
                     "- Explore the help to get more info!"
-                );   	    
+                );
             } else if (content.includes("talking")) {
-		ChatRoomSendLocal(
+                ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: Talking commands - * = more info when using\n" +
                     "<b>/action</b> (stuffhere) = inserts an action. Can also: /a.\n" +
                     "<b>/babytalk</b> (stuffhere) = speaks once as a baby. Can also: /b.\n" +
                     "<b>/gagcode</b> = toggle to decode/not decode gagged people talking. Also works against deafness.\n" +
-		    "<b>/gagtalk</b> (talkmode) (stuffhere) = speaks once in specified gag talk. *\n" +
-		    "<b>/hear</b> (hearmode) = forces a specific hearing mode. *\n" +
+                    "<b>/gagtalk</b> (talkmode) (stuffhere) = speaks once in specified gag talk. *\n" +
+                    "<b>/hear</b> (hearmode) = forces a specific hearing mode. *\n" +
                     "<b>/moaner</b> = moans when horny and stimulated. *\n" +
                     "<b>/s1</b> (stuffhere) = speaks once in light stuttering mode.\n" +
                     "<b>/s2</b> (stuffhere) = speaks once in normal stuttering mode.\n" +
                     "<b>/s3</b> (stuffhere) = speaks once in heavy stuttering mode.\n" +
                     "<b>/s4</b> (stuffhere) = speaks once in total stuttering mode.\n" +
-                   "<b>/stutter</b> (stuttermode) = forces a specific stuttering mode. *\n" +
-		    "<b>/talk</b> (talkmode) = changes your talk mode. *\n" +
+                    "<b>/stutter</b> (stuttermode) = forces a specific stuttering mode. *\n" +
+                    "<b>/talk</b> (talkmode) = changes your talk mode. *\n" +
                     "<b>/whisper</b> (target) = sets whisper target."
                 );
             } else if (content.includes("unl")) {
@@ -203,7 +203,7 @@ async function NEWmenu() {
                     "<b>/bg2</b> (number) = uses a hidden platform background. Number must be between 1 and 55. Use /bg2 or /bg2 0 to get the list.\n" +
                     "<b>/colorchanger</b> (animhere) = gets an animation with color change. Using will give more info.\n" +
                     "<b>/pose2</b> (posehere) (target) = changes the pose of any player. Using will give more info.\n" +
-		    "<b>/see</b> (visionmode) (blurlevel) = forces a specific vision mode. Using will give more info.\n" +
+                    "<b>/see</b> (visionmode) (blurlevel) = forces a specific vision mode. Using will give more info.\n" +
                     "<b>/speak</b> = animates mouth when talking in chat. Can also: /mouth or /speech."
                 );
             } else if (content.includes("zones")) {
@@ -742,7 +742,7 @@ async function NEWmenu() {
             OnlineGameName = "";
             CommonSetScreen("Room", "AsylumEntrance");
             ChatRoomClearAllElements();
-            AsylumEntranceIsWearingNurseClothes = function() {
+            AsylumEntranceIsWearingNurseClothes = function () {
                 return true
             };
             if (ReputationGet("Asylum") < 0) {
@@ -752,7 +752,7 @@ async function NEWmenu() {
             if (this.AutoKickOn == false || this.AutoKickOn == undefined) {
                 ChatRoomSendLocal("AutoKick: Ready.");
                 AutoKickOn = true;
-                AutoKicker = function(data, days = 1, hours = 12, minutes = 0) {
+                AutoKicker = function (data, days = 1, hours = 12, minutes = 0) {
                     minutes *= 60000;
                     hours *= 3600000;
                     days *= 86400000;
@@ -1200,11 +1200,11 @@ async function NEWmenu() {
                     "7 Bedroom Dungeon - 8 Bedroom Edward\n" +
                     "9, 10 Bedroom Isabella - 11 Bedroom Melody\n" +
                     "12 to 14 Bedroom Olivia - 15 Black\n" +
-		    "16 to 18 Castle - 19 Clear Path\n" +
-		    "20 to 22 College - 23 to 25 Countess Hall\n" + 
-		    "26, 27 Dungeon 1 - 28, 29 Dungeon Cell\n" +
-		    "30 to 32 Dungeon Storage\n" +
-		    "33 to 36 Forest Cabin - 37 Green Plain\n" +
+                    "16 to 18 Castle - 19 Clear Path\n" +
+                    "20 to 22 College - 23 to 25 Countess Hall\n" +
+                    "26, 27 Dungeon 1 - 28, 29 Dungeon Cell\n" +
+                    "30 to 32 Dungeon Storage\n" +
+                    "33 to 36 Forest Cabin - 37 Green Plain\n" +
                     "38 to 48 Hall (1 to 4) - 49 Maid Bed\n" +
                     "50 Mountain Path - 51, 52 Terrace\n" +
                     "53 Vulture Plain - 54, 55 Wine Cell"
@@ -1253,19 +1253,19 @@ async function NEWmenu() {
                 updateBackground();
             } else if (bg == 15) {
                 ChatCreateBackgroundSelect = '../Screens/Room/PlatformDialog/Background/Black';
-                updateBackground();	    
+                updateBackground();
             } else if (bg == 16) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/Forest/Orig/CastleEntrance';
                 updateBackground();
             } else if (bg == 17) {
                 ChatCreateBackgroundSelect = '../Screens/Room/PlatformDialog/Background/CastleHall';
-               updateBackground();
+                updateBackground();
             } else if (bg == 18) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/Forest/CastleWall';
-                updateBackground();    
+                updateBackground();
             } else if (bg == 19) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/Forest/Orig/ClearPath';
-                updateBackground();    
+                updateBackground();
             } else if (bg == 20) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/College/CollegeArt1';
                 updateBackground();
@@ -1304,19 +1304,19 @@ async function NEWmenu() {
                 updateBackground();
             } else if (bg == 32) {
                 ChatCreateBackgroundSelect = '../Screens/Room/PlatformDialog/Background/DungeonStorageDark';
-                updateBackground();	    
-	    } else if (bg == 33) {
+                updateBackground();
+            } else if (bg == 33) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/Forest/CabinInterior';
-                updateBackground();           
+                updateBackground();
             } else if (bg == 34) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/Forest/CabinPath';
-                updateBackground(); 	    
-	    } else if (bg == 35) {
+                updateBackground();
+            } else if (bg == 35) {
                 ChatCreateBackgroundSelect = '../Screens/Room/PlatformDialog/Background/ForestCabin';
-                updateBackground();  
-	    } else if (bg == 36) {
+                updateBackground();
+            } else if (bg == 36) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/Forest/Orig/WoodCabin';
-                updateBackground();  	    
+                updateBackground();
             } else if (bg == 37) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/Forest/Orig/GreenPlain';
                 updateBackground();
@@ -1364,7 +1364,7 @@ async function NEWmenu() {
                 updateBackground();
             } else if (bg == 52) {
                 ChatCreateBackgroundSelect = '../Screens/Room/PlatformDialog/Background/Terrace';
-                updateBackground();   
+                updateBackground();
             } else if (bg == 53) {
                 ChatCreateBackgroundSelect = '../Screens/Room/Platform/Background/Forest/Orig/VulturePlain';
                 updateBackground();
@@ -1380,7 +1380,7 @@ async function NEWmenu() {
             LogAdd("ModifierDuration", "SkillModifier", CurrentTime + 3600000);
             ChatRoomSendLocal("Quick-AccessMenu2: You feel your senses heightened(bondage/evasion). Can see change in information panel.");
         } else if (content.indexOf("/chess") == 0) {
-            CollegeChessGameEndALT = function() {
+            CollegeChessGameEndALT = function () {
                 document.removeEventListener("chessOnMove", CollegeChessGameProgress);
                 MiniGameEnded = true;
                 ChessEndStatus = "Draw";
@@ -1394,7 +1394,7 @@ async function NEWmenu() {
                 ChatRoomLoad();
                 ChatRoomClearAllElements();
             };
-            CollegeChessGameStartALT = function(Difficulty) {
+            CollegeChessGameStartALT = function (Difficulty) {
                 CollegeChessDifficulty = parseInt(Difficulty);
                 const playerStarts = Math.random() < 0.5;
                 ChessCharacterWhite = playerStarts ? Player : CollegeChessOpponent;
@@ -1407,7 +1407,7 @@ async function NEWmenu() {
                 ChessOn = true;
                 CommonSetScreen("Room", "CollegeChess");
                 CollegeChessGameStartALT(chessdifficulty);
-                setTimeout(function() {
+                setTimeout(function () {
                     CommonSetScreen("Online", "ChatRoom");
                     ElementPositionFix("DivChessBoard", null, -1000, 0);
                 }, 2000);
@@ -1422,7 +1422,7 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
+            if (target[0] == null) {
                 var targetnumber = parseInt(targetname);
                 target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
@@ -1463,23 +1463,23 @@ async function NEWmenu() {
             OnlineGameName = "";
             CommonSetScreen("Room", "CollegeEntrance");
             ChatRoomClearAllElements();
-            CollegeEntranceIsWearingTennisClothes = function() {
+            CollegeEntranceIsWearingTennisClothes = function () {
                 return true;
             }
-            CollegeEntranceIsWearingCollegeClothes = function() {
+            CollegeEntranceIsWearingCollegeClothes = function () {
                 return true;
             }
-            CollegeEntranceIsWearingTennisClothes = function() {
+            CollegeEntranceIsWearingTennisClothes = function () {
                 return true;
             }
-            CollegeEntranceCanGoTeacher = function() {
+            CollegeEntranceCanGoTeacher = function () {
                 return true;
             }
         } else if (content.indexOf("/colorchanger") == 0) {
 
             if (content.includes("custom") || content.includes("set") || content.includes("select")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target, select area. If successful, will be returned. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     if (CurrentCharacter.FocusGroup.Name) {
                         var RandomColor = null;
                         var ColorTargetNameCustom = CurrentCharacter;
@@ -1514,8 +1514,8 @@ async function NEWmenu() {
                             this.ColorTarget10 = CurrentCharacter.FocusGroup.Name
                         }
 
-                        ColorChangerCustom = function() {
-                            setTimeout(function() {
+                        ColorChangerCustom = function () {
+                            setTimeout(function () {
                                 ColorChangerCustom()
                             }, 1000);
                             RandomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -1566,11 +1566,11 @@ async function NEWmenu() {
                 }, 5000);
             } else if (content.includes("eyes")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target, select area. If successful, will be returned. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     if (CurrentCharacter) {
                         var ColorTargetNameEyes = CurrentCharacter;
-                        ColorChangerEyes = function() {
-                            setTimeout(function() {
+                        ColorChangerEyes = function () {
+                            setTimeout(function () {
                                 ColorChangerEyes()
                             }, 1000);
                             var RandomColor = null;
@@ -1593,11 +1593,11 @@ async function NEWmenu() {
                 }, 5000);
             } else if (content.includes("hair")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target, select area. If successful, will be returned. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     if (CurrentCharacter) {
                         var ColorTargetNameHair = CurrentCharacter;
-                        ColorChangerHair = function() {
-                            setTimeout(function() {
+                        ColorChangerHair = function () {
+                            setTimeout(function () {
                                 ColorChangerHair()
                             }, 1000);
                             var RandomColor = null;
@@ -1619,9 +1619,9 @@ async function NEWmenu() {
                     }
                 }, 5000);
             } else if (content.includes("stop") || content.includes("reset")) {
-                ColorChangerCustom = function() {};
-                ColorChangerEyes = function() {};
-                ColorChangerHair = function() {};
+                ColorChangerCustom = function () { };
+                ColorChangerEyes = function () { };
+                ColorChangerHair = function () { };
                 this.ColorTarget1 = undefined;
                 this.ColorTarget2 = undefined;
                 this.ColorTarget3 = undefined;
@@ -1656,7 +1656,7 @@ async function NEWmenu() {
                 };
                 var targetfinder = new RegExp('^' + targetname + '', 'i');
                 var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-		if (target[0] == null) {
+                if (target[0] == null) {
                     var targetnumber = parseInt(targetname);
                     target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
                 };
@@ -1679,7 +1679,7 @@ async function NEWmenu() {
                 };
                 var targetfinder = new RegExp('^' + targetname + '', 'i');
                 var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-		if (target[0] == null) {
+                if (target[0] == null) {
                     var targetnumber = parseInt(targetname);
                     target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
                 };
@@ -1702,7 +1702,7 @@ async function NEWmenu() {
                 };
                 var targetfinder = new RegExp('^' + targetname + '', 'i');
                 var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-		if (target[0] == null) {
+                if (target[0] == null) {
                     var targetnumber = parseInt(targetname);
                     target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
                 };
@@ -1883,7 +1883,7 @@ async function NEWmenu() {
                 ServerSocket.open();
             }
         } else if (content.indexOf("/frlist") == 0) {
-            setTimeout(function() {
+            setTimeout(function () {
                 ChatRoomSpace = "";
                 CommonSetScreen("Online", "ChatSearch");
                 ChatRoomSetLastChatRoom("");
@@ -1896,7 +1896,7 @@ async function NEWmenu() {
                 };
                 CommonSetScreen("Character", "FriendList");
             }, 3000);
-            setTimeout(function() {
+            setTimeout(function () {
                 FriendListExit();
                 CommonSetScreen("Online", "ChatRoom");
                 document.getElementById("InputChat").style.display = "inline";
@@ -1913,12 +1913,12 @@ async function NEWmenu() {
                 window.SpeechGarble = OldSpeechGarble;
                 ChatRoomSendLocal("Quick-AccessMenu2: Gag Talk is not decoded.");
             }
-	} else if (content.indexOf("/gagtalk") == 0) {          
+        } else if (content.indexOf("/gagtalk") == 0) {
             if (content.endsWith("/gagtalk")) {
                 ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: The gagtalk command must be followed by a number between 1 and 8, then your message.\n" +
                     " \n" +
-                    "Available talk modes:\n" +                 
+                    "Available talk modes:\n" +
                     "1 very light gag talk\n" +
                     "2 light gag talk\n" +
                     "3 easy gag talk\n" +
@@ -1932,8 +1932,8 @@ async function NEWmenu() {
                 var stringGag1 = content;
                 var stringGag2 = stringGag1.split(/[ ,]+/);
                 var gaglevel = stringGag2[1];
-                if ((gaglevel > 0) && (gaglevel < 9)) {  
-                    gl = gaglevel; 
+                if ((gaglevel > 0) && (gaglevel < 9)) {
+                    gl = gaglevel;
                     content = SpeechGarbleByGagLevel(gl, content.substring(11).trim());
                     ServerSend("ChatRoomChat", {
                         "Content": content,
@@ -2025,8 +2025,8 @@ async function NEWmenu() {
             ChatRoomSendLocal("Quick-AccessMenu2: Every item in the game now added.");
             AssetFemale3DCG.forEach(group => group.Asset.forEach(item => InventoryAdd(Player, item.Name, group.Group)));
             ServerPlayerInventorySync();
-	} else if (content.indexOf("/hear") == 0) {
-             if (content.endsWith("/hear")) {
+        } else if (content.indexOf("/hear") == 0) {
+            if (content.endsWith("/hear")) {
                 ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: The hear command must be followed by a number between 0 and 4.\n" +
                     " \n" +
@@ -2036,46 +2036,46 @@ async function NEWmenu() {
                     "2 normal deafness\n" +
                     "3 heavy deafness\n" +
                     "4 total deafness"
-                 );
-             } else {
-                 var dl = content.substring(5).trim();
-                     if (dl == 0) { 
-                         GetDeafLevel0();
-                         Player.GetDeafLevel = GetDeafLevel0;
-                         Player.GetDeafLevel();
-		         ChatRoomSendLocal("Quick-AccessMenu2: Back to normal hearing mode.");
-                     } 
-                     if (dl == 1) { 
-		         GetDeafLevel1();
-                         Player.GetDeafLevel = GetDeafLevel1;
-                         Player.GetDeafLevel();
-                         ChatRoomSendLocal("Quick-AccessMenu2: You are now in light deafness mode.");
-                     } 
-                    if (dl == 2) { 
-		        GetDeafLevel2(); 
-                        Player.GetDeafLevel = GetDeafLevel2;
-                        Player.GetDeafLevel();
-                        ChatRoomSendLocal("Quick-AccessMenu2: You are now in normal deafness mode.");
-                     } 
-                   if (dl == 3) { 
-			GetDeafLevel3(); 
-                        Player.GetDeafLevel = GetDeafLevel3;
-                        Player.GetDeafLevel();
-                        ChatRoomSendLocal("Quick-AccessMenu2: You are now in heavy deafness mode.");
-                     } 
-                  if (dl == 4) { 
-		       GetDeafLevel4();
-                       Player.GetDeafLevel = GetDeafLevel4;
-                       Player.GetDeafLevel();
-                       ChatRoomSendLocal("Quick-AccessMenu2: You are now in total deafness mode.");
-                     } 
-              }	
+                );
+            } else {
+                var dl = content.substring(5).trim();
+                if (dl == 0) {
+                    GetDeafLevel0();
+                    Player.GetDeafLevel = GetDeafLevel0;
+                    Player.GetDeafLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: Back to normal hearing mode.");
+                }
+                if (dl == 1) {
+                    GetDeafLevel1();
+                    Player.GetDeafLevel = GetDeafLevel1;
+                    Player.GetDeafLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in light deafness mode.");
+                }
+                if (dl == 2) {
+                    GetDeafLevel2();
+                    Player.GetDeafLevel = GetDeafLevel2;
+                    Player.GetDeafLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in normal deafness mode.");
+                }
+                if (dl == 3) {
+                    GetDeafLevel3();
+                    Player.GetDeafLevel = GetDeafLevel3;
+                    Player.GetDeafLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in heavy deafness mode.");
+                }
+                if (dl == 4) {
+                    GetDeafLevel4();
+                    Player.GetDeafLevel = GetDeafLevel4;
+                    Player.GetDeafLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in total deafness mode.");
+                }
+            }
         } else if (content.indexOf("/hiddenmessages") == 0) {
             if (this.HiddenMessagesOn == undefined || this.HiddenMessagesOn == false) {
                 HiddenMessagesOn = true;
                 ChatRoomSendLocal("Quick-AccessMenu2: Hidden messages revealed.");
                 (typeof oldChatRoomMessage !== 'undefined') && (ChatRoomMessage = oldChatRoomMessage); //reset
-                newChatRoomMessage = function(data) {
+                newChatRoomMessage = function (data) {
                     if (data.Type == "Hidden") {
                         ChatRoomMessage({
                             Content: "HiddenMessage:" + data.Content,
@@ -2091,7 +2091,7 @@ async function NEWmenu() {
                 HiddenMessagesOn = false;
                 ChatRoomSendLocal("Quick-AccessMenu2: Hidden messages hidden.");
                 (typeof oldChatRoomMessage !== 'undefined') && (ChatRoomMessage = oldChatRoomMessage); //reset
-                newChatRoomMessage = function(data) {}
+                newChatRoomMessage = function (data) { }
             }
         } else if (content.indexOf("/keydeposit") == 0) {
             var hours = content.substring(11).trim();
@@ -2105,12 +2105,12 @@ async function NEWmenu() {
             });
             CellDepositKeys(hours);
         } else if (content.indexOf("/kinkydungeon") == 0) {
-            ArcadeKinkyDungeonEnd = function() {
+            ArcadeKinkyDungeonEnd = function () {
                 CommonSetScreen("Online", "ChatRoom");
                 document.getElementById("InputChat").style.display = "inline";
                 document.getElementById("TextAreaChatLog").style.display = "inline";
             }; //rewrite end to return to chatroom and restore chat
-            ArcadeDeviousChallengeAllowed = function() {} //null to always allow
+            ArcadeDeviousChallengeAllowed = function () { } //null to always allow
             if (content.includes("devious")) {
                 if (this.DeviousOn == undefined || this.DeviousOn == false) {
                     DeviousOn = true;
@@ -2129,7 +2129,7 @@ async function NEWmenu() {
                 ArcadeKinkyDungeonStart(ReputationChange("Gaming"));
                 document.getElementById("InputChat").style.display = "none";
                 document.getElementById("TextAreaChatLog").style.display = "none";
-                setTimeout(function() {
+                setTimeout(function () {
                     KinkyDungeonRedKeys += 999;
                     KinkyDungeonGreenKeys += 999;
                     KinkyDungeonBlueKeys += 999;
@@ -2139,300 +2139,300 @@ async function NEWmenu() {
                     KinkyDungeonNormalBlades += 999;
                     var KinkyDungeonMysticSeals = 999;
                     var KinkyDungeonSpells = [{
-                            name: "Firebolt",
-                            exhaustion: 1,
-                            components: ["Arms"],
-                            level: 1,
-                            type: "bolt",
-                            projectile: true,
-                            onhit: "",
-                            power: 3,
-                            delay: 0,
-                            range: 50,
-                            damage: "fire",
-                            speed: 1,
-                            playerEffect: {
-                                name: "Damage"
-                            }
-                        },
-                        {
-                            name: "Snare",
-                            exhaustion: 1,
-                            components: ["Legs"],
-                            level: 1,
-                            type: "inert",
-                            projectile: false,
-                            onhit: "lingering",
-                            lifetime: -1,
-                            time: 10,
-                            delay: 3,
-                            range: 1,
-                            damage: "stun",
-                            playerEffect: {
-                                name: "MagicRope",
-                                time: 3
-                            }
-                        },
-                        {
-                            name: "Fireball",
-                            exhaustion: 6,
-                            components: ["Arms"],
-                            level: 4,
-                            type: "bolt",
-                            projectile: true,
-                            onhit: "aoe",
-                            power: 4,
-                            delay: 0,
-                            range: 50,
-                            aoe: 1.5,
-                            size: 3,
-                            lifetime: 1,
-                            damage: "fire",
-                            speed: 1,
-                            playerEffect: {
-                                name: "Damage"
-                            }
-                        }, // Throws a fireball in a direction that moves 1 square each turn
-                        {
-                            name: "Icebolt",
-                            exhaustion: 4,
-                            components: ["Arms"],
-                            level: 2,
-                            type: "bolt",
-                            projectile: true,
-                            onhit: "",
-                            time: 4,
-                            power: 2,
-                            delay: 0,
-                            range: 50,
-                            damage: "ice",
-                            speed: 2,
-                            playerEffect: {
-                                name: "Damage"
-                            }
-                        },
-                        {
-                            name: "Electrify",
-                            exhaustion: 2,
-                            components: ["Arms"],
-                            level: 2,
-                            type: "inert",
-                            projectile: false,
-                            onhit: "aoe",
-                            power: 5,
-                            time: 1,
-                            delay: 1,
-                            range: 4,
-                            size: 1,
-                            aoe: 0.75,
-                            lifetime: 1,
-                            damage: "electric",
-                            playerEffect: {
-                                name: "Shock",
-                                time: 1
-                            }
-                        },
-                        {
-                            name: "Shield",
-                            exhaustion: 3,
-                            components: ["Legs"],
-                            level: 1,
-                            type: "inert",
-                            projectile: false,
-                            block: 5,
-                            onhit: "",
-                            power: 0,
-                            delay: 1,
-                            range: 1.5,
-                            size: 1,
-                            damage: ""
-                        },
-                        {
-                            name: "GreaterShield",
-                            exhaustion: 4,
-                            components: ["Legs"],
-                            level: 2,
-                            type: "inert",
-                            projectile: false,
-                            block: 10,
-                            onhit: "",
-                            power: 0,
-                            delay: 5,
-                            range: 2,
-                            size: 1,
-                            damage: ""
-                        },
-                        {
-                            name: "Slime",
-                            exhaustion: 5,
-                            components: ["Legs"],
-                            level: 3,
-                            type: "inert",
-                            projectile: false,
-                            onhit: "lingering",
-                            time: 2,
-                            delay: 1,
-                            range: 4,
-                            size: 3,
-                            aoe: 2,
-                            lifetime: 3,
-                            lifetimeHitBonus: 12,
-                            damage: "stun",
-                            playerEffect: {
-                                name: "SlimeTrap",
-                                time: 3
-                            }
-                        },
-                        {
-                            name: "ChainBolt",
-                            exhaustion: 1,
-                            components: ["Arms"],
-                            level: 1,
-                            type: "bolt",
-                            projectile: true,
-                            onhit: "",
-                            time: 1,
-                            power: 2,
-                            delay: 0,
-                            range: 50,
-                            damage: "chain",
-                            speed: 2,
-                            playerEffect: {
-                                name: "SingleChain",
-                                time: 1
-                            }
-                        },
-                        {
-                            name: "SlimeBall",
-                            exhaustion: 4,
-                            components: ["Arms"],
-                            level: 2,
-                            type: "bolt",
-                            projectile: true,
-                            onhit: "",
-                            time: 2,
-                            power: 2.5,
-                            delay: 0,
-                            range: 50,
-                            damage: "glue",
-                            speed: 1,
-                            trailLifetime: 10,
-                            trailDamage: "stun",
-                            trail: "lingering",
-                            trailChance: 1.0,
-                            playerEffect: {
-                                name: "SlimeTrap",
-                                time: 3
-                            }
-                        },
-                        {
-                            name: "Leap",
-                            exhaustion: 5,
-                            components: ["Legs"],
-                            level: 2,
-                            type: "inert",
-                            projectile: false,
-                            onhit: "teleport",
-                            delay: 1,
-                            lifetime: 1,
-                            range: 5,
-                            damage: ""
-                        },
-                        {
-                            name: "Blink",
-                            exhaustion: 3,
-                            components: ["Verbal"],
-                            level: 2,
-                            type: "inert",
-                            projectile: false,
-                            onhit: "teleport",
-                            delay: 3,
-                            range: 3,
-                            damage: ""
-                        },
-                        {
-                            name: "Flash",
-                            exhaustion: 3,
-                            components: ["Verbal"],
-                            level: 2,
-                            type: "inert",
-                            projectile: false,
-                            onhit: "aoe",
-                            time: 3,
-                            delay: 1,
-                            range: 2.5,
-                            size: 3,
-                            aoe: 1.5,
-                            lifetime: 1,
-                            damage: "stun",
-                            playerEffect: {
-                                name: "Blind",
-                                time: 3
-                            }
-                        },
-                        {
-                            name: "GreaterFlash",
-                            exhaustion: 5,
-                            components: ["Verbal"],
-                            level: 3,
-                            type: "inert",
-                            projectile: false,
-                            onhit: "aoe",
-                            time: 4,
-                            delay: 1,
-                            range: 2.5,
-                            size: 5,
-                            aoe: 2.5,
-                            lifetime: 1,
-                            damage: "stun",
-                            playerEffect: {
-                                name: "Blind",
-                                time: 3
-                            }
-                        },
-                        {
-                            name: "FocusedFlash",
-                            exhaustion: 6,
-                            components: ["Verbal"],
-                            level: 4,
-                            type: "inert",
-                            projectile: false,
-                            onhit: "aoe",
-                            time: 12,
-                            delay: 2,
-                            range: 2.5,
-                            size: 3,
-                            aoe: 1.5,
-                            lifetime: 1,
-                            damage: "stun",
-                            playerEffect: {
-                                name: "Blind",
-                                time: 12
-                            }
-                        },
-                        {
-                            name: "Shroud",
-                            exhaustion: 4,
-                            components: ["Verbal"],
-                            level: 3,
-                            type: "inert",
-                            projectile: false,
-                            buffs: [{
-                                type: "Evasion",
-                                power: 0.75,
-                                player: true,
-                                enemies: true,
-                                tags: ["darkness"],
-                                range: 1.5
-                            }],
-                            onhit: "",
-                            aoe: 1.5,
-                            power: 0,
-                            delay: 8,
-                            range: 4,
-                            size: 3,
-                            damage: ""
-                        },
+                        name: "Firebolt",
+                        exhaustion: 1,
+                        components: ["Arms"],
+                        level: 1,
+                        type: "bolt",
+                        projectile: true,
+                        onhit: "",
+                        power: 3,
+                        delay: 0,
+                        range: 50,
+                        damage: "fire",
+                        speed: 1,
+                        playerEffect: {
+                            name: "Damage"
+                        }
+                    },
+                    {
+                        name: "Snare",
+                        exhaustion: 1,
+                        components: ["Legs"],
+                        level: 1,
+                        type: "inert",
+                        projectile: false,
+                        onhit: "lingering",
+                        lifetime: -1,
+                        time: 10,
+                        delay: 3,
+                        range: 1,
+                        damage: "stun",
+                        playerEffect: {
+                            name: "MagicRope",
+                            time: 3
+                        }
+                    },
+                    {
+                        name: "Fireball",
+                        exhaustion: 6,
+                        components: ["Arms"],
+                        level: 4,
+                        type: "bolt",
+                        projectile: true,
+                        onhit: "aoe",
+                        power: 4,
+                        delay: 0,
+                        range: 50,
+                        aoe: 1.5,
+                        size: 3,
+                        lifetime: 1,
+                        damage: "fire",
+                        speed: 1,
+                        playerEffect: {
+                            name: "Damage"
+                        }
+                    }, // Throws a fireball in a direction that moves 1 square each turn
+                    {
+                        name: "Icebolt",
+                        exhaustion: 4,
+                        components: ["Arms"],
+                        level: 2,
+                        type: "bolt",
+                        projectile: true,
+                        onhit: "",
+                        time: 4,
+                        power: 2,
+                        delay: 0,
+                        range: 50,
+                        damage: "ice",
+                        speed: 2,
+                        playerEffect: {
+                            name: "Damage"
+                        }
+                    },
+                    {
+                        name: "Electrify",
+                        exhaustion: 2,
+                        components: ["Arms"],
+                        level: 2,
+                        type: "inert",
+                        projectile: false,
+                        onhit: "aoe",
+                        power: 5,
+                        time: 1,
+                        delay: 1,
+                        range: 4,
+                        size: 1,
+                        aoe: 0.75,
+                        lifetime: 1,
+                        damage: "electric",
+                        playerEffect: {
+                            name: "Shock",
+                            time: 1
+                        }
+                    },
+                    {
+                        name: "Shield",
+                        exhaustion: 3,
+                        components: ["Legs"],
+                        level: 1,
+                        type: "inert",
+                        projectile: false,
+                        block: 5,
+                        onhit: "",
+                        power: 0,
+                        delay: 1,
+                        range: 1.5,
+                        size: 1,
+                        damage: ""
+                    },
+                    {
+                        name: "GreaterShield",
+                        exhaustion: 4,
+                        components: ["Legs"],
+                        level: 2,
+                        type: "inert",
+                        projectile: false,
+                        block: 10,
+                        onhit: "",
+                        power: 0,
+                        delay: 5,
+                        range: 2,
+                        size: 1,
+                        damage: ""
+                    },
+                    {
+                        name: "Slime",
+                        exhaustion: 5,
+                        components: ["Legs"],
+                        level: 3,
+                        type: "inert",
+                        projectile: false,
+                        onhit: "lingering",
+                        time: 2,
+                        delay: 1,
+                        range: 4,
+                        size: 3,
+                        aoe: 2,
+                        lifetime: 3,
+                        lifetimeHitBonus: 12,
+                        damage: "stun",
+                        playerEffect: {
+                            name: "SlimeTrap",
+                            time: 3
+                        }
+                    },
+                    {
+                        name: "ChainBolt",
+                        exhaustion: 1,
+                        components: ["Arms"],
+                        level: 1,
+                        type: "bolt",
+                        projectile: true,
+                        onhit: "",
+                        time: 1,
+                        power: 2,
+                        delay: 0,
+                        range: 50,
+                        damage: "chain",
+                        speed: 2,
+                        playerEffect: {
+                            name: "SingleChain",
+                            time: 1
+                        }
+                    },
+                    {
+                        name: "SlimeBall",
+                        exhaustion: 4,
+                        components: ["Arms"],
+                        level: 2,
+                        type: "bolt",
+                        projectile: true,
+                        onhit: "",
+                        time: 2,
+                        power: 2.5,
+                        delay: 0,
+                        range: 50,
+                        damage: "glue",
+                        speed: 1,
+                        trailLifetime: 10,
+                        trailDamage: "stun",
+                        trail: "lingering",
+                        trailChance: 1.0,
+                        playerEffect: {
+                            name: "SlimeTrap",
+                            time: 3
+                        }
+                    },
+                    {
+                        name: "Leap",
+                        exhaustion: 5,
+                        components: ["Legs"],
+                        level: 2,
+                        type: "inert",
+                        projectile: false,
+                        onhit: "teleport",
+                        delay: 1,
+                        lifetime: 1,
+                        range: 5,
+                        damage: ""
+                    },
+                    {
+                        name: "Blink",
+                        exhaustion: 3,
+                        components: ["Verbal"],
+                        level: 2,
+                        type: "inert",
+                        projectile: false,
+                        onhit: "teleport",
+                        delay: 3,
+                        range: 3,
+                        damage: ""
+                    },
+                    {
+                        name: "Flash",
+                        exhaustion: 3,
+                        components: ["Verbal"],
+                        level: 2,
+                        type: "inert",
+                        projectile: false,
+                        onhit: "aoe",
+                        time: 3,
+                        delay: 1,
+                        range: 2.5,
+                        size: 3,
+                        aoe: 1.5,
+                        lifetime: 1,
+                        damage: "stun",
+                        playerEffect: {
+                            name: "Blind",
+                            time: 3
+                        }
+                    },
+                    {
+                        name: "GreaterFlash",
+                        exhaustion: 5,
+                        components: ["Verbal"],
+                        level: 3,
+                        type: "inert",
+                        projectile: false,
+                        onhit: "aoe",
+                        time: 4,
+                        delay: 1,
+                        range: 2.5,
+                        size: 5,
+                        aoe: 2.5,
+                        lifetime: 1,
+                        damage: "stun",
+                        playerEffect: {
+                            name: "Blind",
+                            time: 3
+                        }
+                    },
+                    {
+                        name: "FocusedFlash",
+                        exhaustion: 6,
+                        components: ["Verbal"],
+                        level: 4,
+                        type: "inert",
+                        projectile: false,
+                        onhit: "aoe",
+                        time: 12,
+                        delay: 2,
+                        range: 2.5,
+                        size: 3,
+                        aoe: 1.5,
+                        lifetime: 1,
+                        damage: "stun",
+                        playerEffect: {
+                            name: "Blind",
+                            time: 12
+                        }
+                    },
+                    {
+                        name: "Shroud",
+                        exhaustion: 4,
+                        components: ["Verbal"],
+                        level: 3,
+                        type: "inert",
+                        projectile: false,
+                        buffs: [{
+                            type: "Evasion",
+                            power: 0.75,
+                            player: true,
+                            enemies: true,
+                            tags: ["darkness"],
+                            range: 1.5
+                        }],
+                        onhit: "",
+                        aoe: 1.5,
+                        power: 0,
+                        delay: 8,
+                        range: 4,
+                        size: 3,
+                        damage: ""
+                    },
                     ];
                 }, 5000);
             } else if (content.endsWith("/kinkydungeon")) {
@@ -2440,7 +2440,7 @@ async function NEWmenu() {
                 ArcadeKinkyDungeonStart(ReputationChange("Gaming"));
                 document.getElementById("InputChat").style.display = "none";
                 document.getElementById("TextAreaChatLog").style.display = "none";
-                setTimeout(function() {
+                setTimeout(function () {
                     KinkyDungeonRedKeys += 0;
                     KinkyDungeonGreenKeys += 0;
                     KinkyDungeonBlueKeys += 0;
@@ -2529,8 +2529,8 @@ async function NEWmenu() {
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
             if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ServerSend("ChatRoomChat", {
@@ -3098,7 +3098,7 @@ async function NEWmenu() {
                         }
                     }
                 }
-		if ((InventoryGet(target[0], "ItemTorso2") != null) && (InventoryGet(target[0], "ItemTorso2").Asset.AllowLock == true)) {
+                if ((InventoryGet(target[0], "ItemTorso2") != null) && (InventoryGet(target[0], "ItemTorso2").Asset.AllowLock == true)) {
                     if (((InventoryGet(target[0], "ItemTorso2").Property != null) && (InventoryGet(target[0], "ItemTorso2").Property.LockedBy == null)) || (InventoryGet(target[0], "ItemTorso2").Property == null)) {
                         InventoryLock(target[0], "ItemTorso2", Lock, mn);
                         if (removeitem == "r") {
@@ -3180,7 +3180,7 @@ async function NEWmenu() {
                 AccountName: stringLogin2[1],
                 Password: stringLogin2[2]
             });
-            setTimeout(function() {
+            setTimeout(function () {
                 ChatRoomClearAllElements();
             }, 3000);
         } else if (content.indexOf("/maxstatistics") == 0) {
@@ -3266,9 +3266,9 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
+            if (target[0] == null) {
                 var targetnumber = parseInt(targetname);
-                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);              
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ServerSend("ChatRoomChat", {
@@ -3304,18 +3304,18 @@ async function NEWmenu() {
                 Player.Nickname = NewName;
                 var tmpname = NewName;
             }
-	} else if (content.indexOf("/npcpunish") == 0) {
+        } else if (content.indexOf("/npcpunish") == 0) {
             if (Player.RestrictionSettings.BypassNPCPunishments == true) {
                 Player.RestrictionSettings.BypassNPCPunishments = false;
                 ChatRoomSendLocal("Quick-AccessMenu2: NPC punishments enabled.");
             } else {
                 Player.RestrictionSettings.BypassNPCPunishments = true;
                 ChatRoomSendLocal("Quick-AccessMenu2: NPC punishments disabled.");
-            }	
-       } else if (content.indexOf("/outfit") == 0) {
+            }
+        } else if (content.indexOf("/outfit") == 0) {
             if (content.includes("load1")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target. If successful, the outfit will be loaded. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     CurrentCharacter.Appearance = this.savedoutfit1.slice(0);
                     CharacterRefresh(CurrentCharacter);
                     ChatRoomCharacterUpdate(CurrentCharacter);
@@ -3323,7 +3323,7 @@ async function NEWmenu() {
                 }, 5000);
             } else if (content.includes("load2")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target. If successful, the outfit will be loaded. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     CurrentCharacter.Appearance = savedoutfit2.slice(0);
                     CharacterRefresh(CurrentCharacter);
                     ChatRoomCharacterUpdate(CurrentCharacter);
@@ -3331,7 +3331,7 @@ async function NEWmenu() {
                 }, 5000);
             } else if (content.includes("load3")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target. If successful, the outfit will be loaded. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     CurrentCharacter.Appearance = savedoutfit3.slice(0);
                     CharacterRefresh(CurrentCharacter);
                     ChatRoomCharacterUpdate(CurrentCharacter);
@@ -3344,27 +3344,27 @@ async function NEWmenu() {
                 ChatRoomCharacterUpdate(Player);
             } else if (content.includes("save1")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target. If successful, the outfit will be saved. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     this.savedoutfit1 = CurrentCharacter.Appearance.slice(0);
                     DialogLeave();
                 }, 5000);
             } else if (content.includes("save2")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target. If successful, the outfit will be saved. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     this.savedoutfit2 = CurrentCharacter.Appearance.slice(0);
                     DialogLeave();
                 }, 5000);
             } else if (content.includes("save3")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target. If successful, the outfit will be saved. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     this.savedoutfit3 = CurrentCharacter.Appearance.slice(0);
                     DialogLeave();
                 }, 5000);
             } else if (content.includes("awsave")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target. If successful, the outfit will be saved. If not, retry.");
-                setTimeout(function() {
+                setTimeout(function () {
                     var appall = new Array();
-                    CurrentCharacter.Appearance.forEach(item=>{
+                    CurrentCharacter.Appearance.forEach(item => {
                         var app = new Array();
                         app.push(item.Asset.Name);
                         app.push(item.Asset.Group.Name);
@@ -3374,7 +3374,7 @@ async function NEWmenu() {
                         app.push(false);
                         //Do not remove this line.It is for the compability with bcg.
                         appall.push(app);
-                        }
+                    }
                     );
                     ChatRoomSendLocal("Quick-AccessMenu2: Appearance saved.\n" + btoa(encodeURI(JSON.stringify(appall))));
                     DialogLeave();
@@ -3383,13 +3383,13 @@ async function NEWmenu() {
                 appinp = prompt('Please input the awcode (Compatible with BCG).', '');
                 if (appinp) {
                     ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click on target. If successful, the outfit will be loaded. If not, retry.");
-                    setTimeout(function() {
+                    setTimeout(function () {
                         CharacterNaked(CurrentCharacter);
                         CharacterReleaseTotal(CurrentCharacter);
                         var appobj = JSON.parse(decodeURI(atob(appinp)));
-                        appobj.forEach(itemstr=>{
+                        appobj.forEach(itemstr => {
                             InventoryWear(CurrentCharacter, itemstr[0], itemstr[1], itemstr[2], itemstr[3], -1, itemstr[4]);
-                            }
+                        }
                         );
                         ChatRoomCharacterUpdate(CurrentCharacter);
                         DialogLeave();
@@ -3397,19 +3397,19 @@ async function NEWmenu() {
                 }
             } else if (content.endsWith("/outfit")) {
                 ChatRoomSendLocal(
-	            "<b>Quick-AccessMenu2</b>: Options for outfit command:\n" + 
-	            "To restore your outfit to what it was before entering room, type: <b>/outfit reset</b> or <b>/outfit restore</b> or <b>/outfit revert</b>\n" + 
-	            "Three outfits can be saved by using <b>/outfit save1</b> or <b>/outfit save2</b> or <b>/outfit save3</b>\n" + 
-	            "To load saved outfits, type: <b>/outfit load1</b> or <b>/outfit load2</b> or <b>/outfit load3</b>\n" + 
-	            "You will have 5 seconds to click on target. Retry if the saving/loading was unsuccessful\n" + 
-	            "These saves last only 1 login session.\n" + 
-	            "To save outfits between sessions, use <b>/outfit awsave</b>\n" +    
-	            "You will have the outfit saved as a code. You can copy and paste it elsewhere.\n" + 
-	            "Then you can use <b>/outfit awload</b> to load it later."
-		);
+                    "<b>Quick-AccessMenu2</b>: Options for outfit command:\n" +
+                    "To restore your outfit to what it was before entering room, type: <b>/outfit reset</b> or <b>/outfit restore</b> or <b>/outfit revert</b>\n" +
+                    "Three outfits can be saved by using <b>/outfit save1</b> or <b>/outfit save2</b> or <b>/outfit save3</b>\n" +
+                    "To load saved outfits, type: <b>/outfit load1</b> or <b>/outfit load2</b> or <b>/outfit load3</b>\n" +
+                    "You will have 5 seconds to click on target. Retry if the saving/loading was unsuccessful\n" +
+                    "These saves last only 1 login session.\n" +
+                    "To save outfits between sessions, use <b>/outfit awsave</b>\n" +
+                    "You will have the outfit saved as a code. You can copy and paste it elsewhere.\n" +
+                    "Then you can use <b>/outfit awload</b> to load it later."
+                );
             }
-       } else if (content.indexOf("/patreoncheats") == 0) {  
-            CheatValidate = function() {
+        } else if (content.indexOf("/patreoncheats") == 0) {
+            CheatValidate = function () {
                 return true;
             };
             CheatAllow = true;
@@ -3417,13 +3417,13 @@ async function NEWmenu() {
             document.getElementById("InputChat").style.display = "none";
             document.getElementById("TextAreaChatLog").style.display = "none";
             CommonSetScreen("Character", "Cheat");
-            CheatExit = function() { //rewrite cheattexit to return to chatroom
+            CheatExit = function () { //rewrite cheattexit to return to chatroom
                 CheatExport();
                 CommonSetScreen("Online", "ChatRoom");
                 document.getElementById("InputChat").style.display = "inline";
                 document.getElementById("TextAreaChatLog").style.display = "inline";
-            }   
-	} else if (content.indexOf("/permission") == 0) {
+            }
+        } else if (content.indexOf("/permission") == 0) {
             if (content.endsWith("/permission")) {
                 ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: The permission command must be followed by a number.\n" +
@@ -3436,14 +3436,14 @@ async function NEWmenu() {
                     "5 Owner only"
                 );
             } else {
-                 var perm = content.substring(11).trim() * 1;
-                 if ((perm > -1) && (perm < 6)) {
-                     Player.ItemPermission = perm;
-                     ServerAccountUpdate.QueueData({
-                         ItemPermission: Player.ItemPermission
-                     });
-                 }
-            }	
+                var perm = content.substring(11).trim() * 1;
+                if ((perm > -1) && (perm < 6)) {
+                    Player.ItemPermission = perm;
+                    ServerAccountUpdate.QueueData({
+                        ItemPermission: Player.ItemPermission
+                    });
+                }
+            }
         } else if (content.indexOf("/pet") == 0) {
             var targetname = content.substring(4).trim();
             if (targetname == undefined) {
@@ -3452,33 +3452,33 @@ async function NEWmenu() {
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
             if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
-            ServerSend("ChatRoomChat", {
-                Content: "Beep",
-                Type: "Action",
-                Dictionary: [{
-                    Tag: "Beep",
-                    Text: "" + target[0].Nickname + " becomes a cute pet girl."
-                }]
-            });
-            if ((target[0].Name == Player.Name) == false) {
-                ChatRoomTargetMemberNumber = target[0].MemberNumber;
-                consoleWhisper();
+                ServerSend("ChatRoomChat", {
+                    Content: "Beep",
+                    Type: "Action",
+                    Dictionary: [{
+                        Tag: "Beep",
+                        Text: "" + target[0].Nickname + " becomes a cute pet girl."
+                    }]
+                });
+                if ((target[0].Name == Player.Name) == false) {
+                    ChatRoomTargetMemberNumber = target[0].MemberNumber;
+                    consoleWhisper();
+                };
+                CharacterNaked(target[0]);
+                InventoryWearRandom(target[0], "ItemArms", 8, null, false, true, ["ArmbinderJacket", "BitchSuit", "BitchSuitExposed", "Bolero", "BoxTieArmbinder", "Chains", "FullLatexSuit", "HempRope", "InflatableStraightLeotard", "LatexBoxtieLeotard", "LatexButterflyLeotard", "LatexSleevelessLeotard", "LeatherStraitJacket", "StraitLeotard", "StrictLeatherPetCrawler"], true);
+                InventoryWearRandom(target[0], "HairAccessory1", 8, null, false, true, ["Antennae", "BunnyEars1", "BunnyEars2", "CowHorns", "Ears1", "Ears2", "ElfEars", "FoxEars1", "FoxEars2", "FoxEars3", "KittenEars1", "KittenEars2", "MouseEars1", "MouseEars2", "PonyEars1", "PuppyEars1", "PuppyEars2", "RaccoonEars1", "WolfEars1", "WolfEars2"], true);
+                InventoryWearRandom(target[0], "TailStraps", 8, null, false, true, ["CowtailStrap", "FoxTailsStrap", "FoxTailStrap1", "FoxTailStrap2", "HorseTailStrap", "HorseTailStrap1", "KittenTailStrap1", "KittenTailStrap2", "MouseTailStrap1", "MouseTailStrap2", "PuppyTailStrap", "PuppyTailStrap1", "RaccoonStrap", "WolfTailStrap1", "WolfTailStrap2", "WolfTailStrap3"], true);
+                if (InventoryGet(target[0], "ItemMouth") == null) InventoryWearRandom(target[0], "ItemMouth", 8);
+                if (InventoryGet(target[0], "ItemNeck") == null) InventoryWearRandom(target[0], "ItemNeck", 8);
+                if (InventoryGet(target[0], "ItemNeckRestraints") == null) InventoryWear(target[0], "ChainLeash", "ItemNeckRestraints", null, 8);
+                CharacterSetActivePose(target[0], "Kneel", true);
+                CharacterRefresh(target[0]);
+                ChatRoomCharacterUpdate(target[0]);
             };
-            CharacterNaked(target[0]);
-	    InventoryWearRandom(target[0], "ItemArms", 8, null, false, true, ["ArmbinderJacket", "BitchSuit", "BitchSuitExposed", "Bolero", "BoxTieArmbinder", "Chains", "FullLatexSuit", "HempRope", "InflatableStraightLeotard", "LatexBoxtieLeotard", "LatexButterflyLeotard", "LatexSleevelessLeotard", "LeatherStraitJacket", "StraitLeotard", "StrictLeatherPetCrawler"], true);
-	    InventoryWearRandom(target[0], "HairAccessory1", 8, null, false, true, ["Antennae", "BunnyEars1", "BunnyEars2", "CowHorns", "Ears1", "Ears2", "ElfEars", "FoxEars1", "FoxEars2", "FoxEars3", "KittenEars1", "KittenEars2", "MouseEars1", "MouseEars2", "PonyEars1", "PuppyEars1", "PuppyEars2", "RaccoonEars1", "WolfEars1", "WolfEars2"], true);
-	    InventoryWearRandom(target[0], "TailStraps", 8, null, false, true, ["CowtailStrap", "FoxTailsStrap", "FoxTailStrap1", "FoxTailStrap2", "HorseTailStrap", "HorseTailStrap1", "KittenTailStrap1", "KittenTailStrap2", "MouseTailStrap1", "MouseTailStrap2", "PuppyTailStrap", "PuppyTailStrap1", "RaccoonStrap", "WolfTailStrap1", "WolfTailStrap2", "WolfTailStrap3"], true);
-	    if (InventoryGet(target[0], "ItemMouth") == null) InventoryWearRandom(target[0], "ItemMouth", 8);
-	    if (InventoryGet(target[0], "ItemNeck") == null) InventoryWearRandom(target[0], "ItemNeck", 8);
-	    if (InventoryGet(target[0], "ItemNeckRestraints") == null) InventoryWear(target[0], "ChainLeash", "ItemNeckRestraints", null, 8);
-	    CharacterSetActivePose(target[0], "Kneel", true);
-            CharacterRefresh(target[0]);
-            ChatRoomCharacterUpdate(target[0]);
-          };
         } else if (content.indexOf("/pose2") == 0) {
             if (content.endsWith("/pose2")) {
                 ChatRoomSendLocal(
@@ -3490,8 +3490,8 @@ async function NEWmenu() {
                     "sleep, spreadarms1, spreadarms2, spreadeagle1\n" +
                     "spreadeagle2, spreadlegs, stand, suspension,\n" +
                     "tapedhands. Only on yourself: jump, roof.\n" +
-                    "Use <b>/pose2 reset</b> (target) to back to neutral pose.\n" + 
-		    "If BCE is enabled, use <b>/pose baseupper</b> only on yourself when /pose2 reset fails."
+                    "Use <b>/pose2 reset</b> (target) to back to neutral pose.\n" +
+                    "If BCE is enabled, use <b>/pose baseupper</b> only on yourself when /pose2 reset fails."
                 );
             } else {
                 var stringPose1 = content;
@@ -3502,7 +3502,7 @@ async function NEWmenu() {
                 };
                 var targetfinder = new RegExp('^' + targetname + '', 'i');
                 var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-		if (target[0] == null) {
+                if (target[0] == null) {
                     var targetnumber = parseInt(targetname);
                     target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
                 };
@@ -3918,7 +3918,7 @@ async function NEWmenu() {
                             }]
                         });
                         CharacterSetActivePose(Player, null);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             InventoryGet(Player, "Emoticon").Property.OverrideHeight = {
                                 Height: 150
                             };
@@ -3927,14 +3927,14 @@ async function NEWmenu() {
                                 ChatRoomCharacterUpdate(Player) :
                                 CharacterRefresh(Player);
                         }, 1000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             InventoryGet(Player, "Emoticon").Property.OverrideHeight = undefined;
                             CharacterSetActivePose(Player, null);
                             CurrentScreen === "ChatRoom" ?
                                 ChatRoomCharacterUpdate(Player) :
                                 CharacterRefresh(Player);
                         }, 2000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             InventoryGet(Player, "Emoticon").Property.OverrideHeight = {
                                 Height: 150
                             };
@@ -3943,7 +3943,7 @@ async function NEWmenu() {
                                 ChatRoomCharacterUpdate(Player) :
                                 CharacterRefresh(Player);
                         }, 3000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(Player, null);
                             delete InventoryGet(Player, 'Emoticon').Property.OverrideHeight;
                             CurrentScreen === 'ChatRoom' ?
@@ -3962,11 +3962,11 @@ async function NEWmenu() {
                         CharacterSetFacialExpression(Player, "Emoticon", "Annoyed", 1);
                         CharacterSetActivePose(Player, null);
                         ChatRoomCharacterUpdate(Player);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(Player, "OverTheHead");
                             ChatRoomCharacterUpdate(Player);
                         }, 500);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             InventoryGet(Player, "Emoticon").Property.OverrideHeight = {
                                 Height: 250
                             };
@@ -3974,11 +3974,11 @@ async function NEWmenu() {
                                 ChatRoomCharacterUpdate(Player) :
                                 CharacterRefresh(Player);
                         }, 1000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(Player, "Kneel");
                             ChatRoomCharacterUpdate(Player);
                         }, 2000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(Player, "BaseUpper");
                             CharacterSetActivePose(Player, null);
                             CharacterSetActivePose(Player, ["Suspension", "Kneel"]);
@@ -4042,11 +4042,11 @@ async function NEWmenu() {
                         }
                         CharacterSetActivePose(target[0], null);
                         ChatRoomCharacterUpdate(target[0]);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "OverTheHead");
                             ChatRoomCharacterUpdate(target[0]);
                         }, 500);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
                             DialogFocusItem.Property.OverrideHeight = {
@@ -4055,10 +4055,10 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 1000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "Kneel");
                         }, 2000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "Yoked");
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4068,7 +4068,7 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 3000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "OverTheHead");
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4078,7 +4078,7 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 4000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "Yoked");
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4088,7 +4088,7 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 5000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "OverTheHead");
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4098,7 +4098,7 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 6000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "Yoked");
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4108,7 +4108,7 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 7000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "OverTheHead");
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4118,7 +4118,7 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 8000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "Yoked");
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4128,7 +4128,7 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 9000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], "OverTheHead");
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4138,7 +4138,7 @@ async function NEWmenu() {
                             ChatRoomCharacterUpdate(target[0]);
                             DialogLeaveItemMenu();
                         }, 10000);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             CharacterSetActivePose(target[0], null);
                             target[0].FocusGroup = AssetGroupGet("Female3DCG", Region);
                             DialogExtendItem(InventoryGet(target[0], Region));
@@ -4181,9 +4181,9 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 InformationSheetLoadCharacter(target[0]);
@@ -4199,9 +4199,9 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ServerSend("ChatRoomChat", {
@@ -4229,9 +4229,9 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ServerSend("ChatRoomChat", {
@@ -4337,9 +4337,9 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ServerSend("ChatRoomChat", {
@@ -4455,10 +4455,10 @@ async function NEWmenu() {
             } else if (content.includes("clubslave")) {
                 LogAdd("ClubSlave", "Management", CurrentTime);
                 LogAdd("BlockChange", "Rule", CurrentTime);
-                ManagementIsClubSlave = function() {
+                ManagementIsClubSlave = function () {
                     return false
                 }
-                ManagementClubSlaveDialog = function(Player) {}
+                ManagementClubSlaveDialog = function (Player) { }
                 ManagementFinishClubSlave()
             } else if (content.includes("ggts")) {
                 Level = parseInt(0);
@@ -4496,32 +4496,32 @@ async function NEWmenu() {
                 );
             }
         } else if (content.indexOf("/s1") == 0) {
-             content = StutterTalk1(content.substring(3).trim());
-             ServerSend("ChatRoomChat", {
-                 "Content": content,
-                 "Type": "Chat"
-             }); 
+            content = StutterTalk1(content.substring(3).trim());
+            ServerSend("ChatRoomChat", {
+                "Content": content,
+                "Type": "Chat"
+            });
         } else if (content.indexOf("/s2") == 0) {
-             content = StutterTalk2(content.substring(3).trim());
-             ServerSend("ChatRoomChat", {
-                 "Content": content,
-                 "Type": "Chat"
-             });
+            content = StutterTalk2(content.substring(3).trim());
+            ServerSend("ChatRoomChat", {
+                "Content": content,
+                "Type": "Chat"
+            });
         } else if (content.indexOf("/s3") == 0) {
-             content = StutterTalk3(content.substring(3).trim());
-             ServerSend("ChatRoomChat", {
-                 "Content": content,
-                 "Type": "Chat"
-             });
+            content = StutterTalk3(content.substring(3).trim());
+            ServerSend("ChatRoomChat", {
+                "Content": content,
+                "Type": "Chat"
+            });
         } else if (content.indexOf("/s4") == 0) {
-             content = StutterTalk4(content.substring(3).trim());
-             ServerSend("ChatRoomChat", {
-                 "Content": content,
-                 "Type": "Chat"
-             });	
+            content = StutterTalk4(content.substring(3).trim());
+            ServerSend("ChatRoomChat", {
+                "Content": content,
+                "Type": "Chat"
+            });
         } else if (content.indexOf("/safewordspecific") == 0) {
             ChatRoomSendLocal("Quick-AccessMenu2: You have 5 seconds to click  on target, select area. If successful, will be returned. If not, retry.");
-            setTimeout(function() {
+            setTimeout(function () {
                 if (CurrentCharacter !== Player) {
                     ServerSend("ChatRoomChat", {
                         Content: "Quick-Access Menu2: " + Player.Name + " has removed " + InventoryGet(CurrentCharacter, CurrentCharacter.FocusGroup.Name).Asset.Name + " on you via console. If this is undesired, blacklist player.",
@@ -4542,7 +4542,7 @@ async function NEWmenu() {
             ChatRoomSendLocal("Quick-AccessMenu2: Your temporary nickname has now a definitive status.");
         } else if (content.indexOf("/search") == 0) {
             if (content.includes("Asylum") || content.includes("asylum")) {
-                setTimeout(function() {
+                setTimeout(function () {
                     ChatRoomSpace = "Asylum";
                     ChatSearchLeaveRoom = "AsylumEntrance";
                     ChatSearchBackground = "AsylumEntrance";
@@ -4552,27 +4552,27 @@ async function NEWmenu() {
                     document.getElementById("InputChat").style.display = "none";
                     document.getElementById("TextAreaChatLog").style.display = "none";
                 }, 3000);
-                setTimeout(function() {
+                setTimeout(function () {
                     CommonSetScreen("Online", "ChatRoom");
                     document.getElementById("InputChat").style.display = "inline";
                     document.getElementById("TextAreaChatLog").style.display = "inline";
                 }, 15000);
             }
             if (content.includes("club") || content.includes("Club") || content.includes("LARP") || content.includes("larp")) {
-                setTimeout(function() {
+                setTimeout(function () {
                     ChatRoomSpace = "";
                     CommonSetScreen("Online", "ChatSearch");
                     ChatRoomSetLastChatRoom("");
                     document.getElementById("InputChat").style.display = "none";
                     document.getElementById("TextAreaChatLog").style.display = "none";
                 }, 3000);
-                setTimeout(function() {
+                setTimeout(function () {
                     CommonSetScreen("Online", "ChatRoom");
                     document.getElementById("InputChat").style.display = "inline";
                     document.getElementById("TextAreaChatLog").style.display = "inline";
                 }, 15000);
             }
-	} else if (content.indexOf("/see") == 0) {
+        } else if (content.indexOf("/see") == 0) {
             if (content.endsWith("/see")) {
                 ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: The see command must be followed by a vision mode number and optionally a blur level number.\n" +
@@ -4594,62 +4594,62 @@ async function NEWmenu() {
                 var stringVision1 = content;
                 var stringVision2 = stringVision1.split(/[ ,]+/);
                 var bl = stringVision2[1];
-                var br = stringVision2[2];  
-                    if (bl == 0) { 
-                        GetBlindLevel0();
-                        Player.GetBlindLevel = GetBlindLevel0;
-                        Player.GetBlindLevel();
-		        ChatRoomSendLocal("Quick-AccessMenu2: Back to normal vision mode.");
-                    } 
-                    if (bl == 1) { 
-		        GetBlindLevel1();
-                        Player.GetBlindLevel = GetBlindLevel1;
-                        Player.GetBlindLevel();
-                        ChatRoomSendLocal("Quick-AccessMenu2: You are now in light blindness mode.");
-                    } 
-                    if (bl == 2) { 
-		        GetBlindLevel2(); 
-                        Player.GetBlindLevel = GetBlindLevel2;
-                        Player.GetBlindLevel();
-                        ChatRoomSendLocal("Quick-AccessMenu2: You are now in normal blindness mode.");
-                    } 
-                    if (bl == 3) { 
-			GetBlindLevel3(); 
-                        Player.GetBlindLevel = GetBlindLevel3;
-                        Player.GetBlindLevel();
-                        ChatRoomSendLocal("Quick-AccessMenu2: You are now in heavy blindness mode.");
-                    } 
-		    if (br == 0) { 
-                         GetBlurLevel0();
-                         Player.GetBlurLevel = GetBlurLevel0;
-                         Player.GetBlurLevel();
-		         ChatRoomSendLocal("Quick-AccessMenu2: Back to vision without blur effect.");
-                    } 
-                    if (br == 1) { 
-                         GetBlurLevel1();
-                         Player.GetBlurLevel = GetBlurLevel1;
-                         Player.GetBlurLevel();
-		         ChatRoomSendLocal("Quick-AccessMenu2: A light blur effect is applied on your vision.");
-                    } 
-                    if (br == 2) { 
-                         GetBlurLevel2();
-                         Player.GetBlurLevel = GetBlurLevel2;
-                         Player.GetBlurLevel();
-		         ChatRoomSendLocal("Quick-AccessMenu2: A normal blur effect is applied on your vision.");
-                    } 
-                    if (br == 3) { 
-                         GetBlurLevel3();
-                         Player.GetBlurLevel = GetBlurLevel3;
-                         Player.GetBlurLevel();
-		         ChatRoomSendLocal("Quick-AccessMenu2: A heavy blur effect is applied on your vision.");
-                    } 
-                    if (br == 4) { 
-                         GetBlurLevel4();
-                         Player.GetBlurLevel = GetBlurLevel4;
-                         Player.GetBlurLevel();
-		         ChatRoomSendLocal("Quick-AccessMenu2: A total blur effect is applied on your vision.");
-                    }      
-              }		
+                var br = stringVision2[2];
+                if (bl == 0) {
+                    GetBlindLevel0();
+                    Player.GetBlindLevel = GetBlindLevel0;
+                    Player.GetBlindLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: Back to normal vision mode.");
+                }
+                if (bl == 1) {
+                    GetBlindLevel1();
+                    Player.GetBlindLevel = GetBlindLevel1;
+                    Player.GetBlindLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in light blindness mode.");
+                }
+                if (bl == 2) {
+                    GetBlindLevel2();
+                    Player.GetBlindLevel = GetBlindLevel2;
+                    Player.GetBlindLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in normal blindness mode.");
+                }
+                if (bl == 3) {
+                    GetBlindLevel3();
+                    Player.GetBlindLevel = GetBlindLevel3;
+                    Player.GetBlindLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in heavy blindness mode.");
+                }
+                if (br == 0) {
+                    GetBlurLevel0();
+                    Player.GetBlurLevel = GetBlurLevel0;
+                    Player.GetBlurLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: Back to vision without blur effect.");
+                }
+                if (br == 1) {
+                    GetBlurLevel1();
+                    Player.GetBlurLevel = GetBlurLevel1;
+                    Player.GetBlurLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: A light blur effect is applied on your vision.");
+                }
+                if (br == 2) {
+                    GetBlurLevel2();
+                    Player.GetBlurLevel = GetBlurLevel2;
+                    Player.GetBlurLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: A normal blur effect is applied on your vision.");
+                }
+                if (br == 3) {
+                    GetBlurLevel3();
+                    Player.GetBlurLevel = GetBlurLevel3;
+                    Player.GetBlurLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: A heavy blur effect is applied on your vision.");
+                }
+                if (br == 4) {
+                    GetBlurLevel4();
+                    Player.GetBlurLevel = GetBlurLevel4;
+                    Player.GetBlurLevel();
+                    ChatRoomSendLocal("Quick-AccessMenu2: A total blur effect is applied on your vision.");
+                }
+            }
         } else if (content.indexOf("/skill") == 0) {
             if (content.endsWith("/skill")) {
                 ChatRoomSendLocal(
@@ -4682,19 +4682,19 @@ async function NEWmenu() {
                     SkillChange("Willpower", level);
                 }
             }
-	} else if (content.indexOf("/sleep") == 0) {
+        } else if (content.indexOf("/sleep") == 0) {
             var targetname = content.substring(6).trim();
             if (targetname == undefined) {
                 targetname = Player.Name
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
-            if (target[0] != null) {             
-		InventoryWear(target[0],"RegularSleepingPill",'ItemMouth');
+            if (target[0] != null) {
+                InventoryWear(target[0], "RegularSleepingPill", 'ItemMouth');
                 ChatRoomCharacterUpdate(target[0]);
                 CharacterSetFacialExpression(target[0], "Eyes", "Closed");
                 CharacterSetFacialExpression(target[0], "Eyes2", "Closed");
@@ -4707,7 +4707,7 @@ async function NEWmenu() {
                         Dictionary: [{
                             Tag: "Beep",
                             Text: "" + Player.Nickname + " swallows a sleeping pill and drinks a glass of water. She falls asleep very quickly."
-                         }]
+                        }]
                     });
                 } else {
                     ServerSend("ChatRoomChat", {
@@ -4715,11 +4715,11 @@ async function NEWmenu() {
                         Type: "Action",
                         Dictionary: [{
                             Tag: "Beep",
-                            Text: "" + Player.Nickname + "feeds "+ target[0].Nickname + " a sleeping pill and gives her a glass of water. "+ target[0].Nickname +" falls asleep very quickly."
+                            Text: "" + Player.Nickname + "feeds " + target[0].Nickname + " a sleeping pill and gives her a glass of water. " + target[0].Nickname + " falls asleep very quickly."
                         }]
                     });
                 }
-            }	
+            }
         } else if (content.indexOf("/solidity") == 0) {
             var solidity = content.substring(9).trim();
             if (InventoryGet(Player, "ItemDevices") != null) {
@@ -4761,14 +4761,14 @@ async function NEWmenu() {
             InventorySetDifficulty(Player, "ItemNose", solidity);
             InventorySetDifficulty(Player, "ItemPelvis", solidity);
             InventorySetDifficulty(Player, "ItemTorso", solidity);
-	    InventorySetDifficulty(Player, "ItemTorso2", solidity);
+            InventorySetDifficulty(Player, "ItemTorso2", solidity);
             InventorySetDifficulty(Player, "ItemVulva", solidity);
             InventorySetDifficulty(Player, "ItemVulvaPiercings", solidity);
             ServerPlayerInventorySync();
             ChatRoomSendLocal("Quick-AccessMenu2: The solidity of most current bindings has been changed.");
         } else if ((content.indexOf("/speak") == 0) || (content.indexOf("/mouth") == 0) || (content.indexOf("/speech") == 0)) {
             (typeof OLDtalking !== 'undefined') && (ChatRoomSendChat = OLDtalking); // reset
-            NEWtalking = function() {
+            NEWtalking = function () {
                 this.msg = ElementValue("InputChat").trim();
                 if (!this.msg.startsWith("/") && !this.msg.startsWith("*") && !this.msg.startsWith("!")) {
                     if (this.msg.length > 10) {
@@ -4790,8 +4790,8 @@ async function NEWmenu() {
             ChatRoomSetLastChatRoom("");
             OnlineGameName = "";
             ChatRoomClearAllElements();
-	} else if (content.indexOf("/stutter") == 0) {
-             if (content.endsWith("/stutter")) {
+        } else if (content.indexOf("/stutter") == 0) {
+            if (content.endsWith("/stutter")) {
                 ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: The stutter command must be followed by a number between 0 and 4.\n" +
                     " \n" +
@@ -4802,42 +4802,42 @@ async function NEWmenu() {
                     "3 heavy stuttering\n" +
                     "4 total stuttering"
                 );
-             } else {
-                 var stlevel = content.substring(8).trim();
-                 ElementValue("InputChat", ""); 
-                     if (stlevel == 0) { 
-                         ChatRoomSendLocal("Quick-AccessMenu2: No more stuttering.");
-                         Stutter1On = false;
-                         Stutter2On = false;
-                         Stutter3On = false;
-                         Stutter4On = false;
-                         OLDmenu();
-                     } if (stlevel == 1) { 
-                         ChatRoomSendLocal("Quick-AccessMenu2: You are now in light stuttering mode.");
-                         Stutter1On = true;
-                         Stutter2On = false;
-                         Stutter3On = false;
-                         Stutter4On = false;
-                     } if (stlevel == 2) { 
-                         ChatRoomSendLocal("Quick-AccessMenu2: You are now in normal stuttering mode.");
-                         Stutter1On = false;
-                         Stutter2On = true;
-                         Stutter3On = false;
-                         Stutter4On = false;
-                      } if (stlevel == 3) { 
-                         ChatRoomSendLocal("Quick-AccessMenu2: You are now in heavy stuttering mode.");
-                         Stutter1On = false;
-                         Stutter2On = false;
-                         Stutter3On = true;
-                         Stutter4On = false;
-                      } if (stlevel == 4) { 
-                         ChatRoomSendLocal("Quick-AccessMenu2: You are now in total stuttering mode.");
-                         Stutter1On = false;
-                         Stutter2On = false;
-                         Stutter3On = false;
-                         Stutter4On = true;
-                     }
-              }	
+            } else {
+                var stlevel = content.substring(8).trim();
+                ElementValue("InputChat", "");
+                if (stlevel == 0) {
+                    ChatRoomSendLocal("Quick-AccessMenu2: No more stuttering.");
+                    Stutter1On = false;
+                    Stutter2On = false;
+                    Stutter3On = false;
+                    Stutter4On = false;
+                    OLDmenu();
+                } if (stlevel == 1) {
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in light stuttering mode.");
+                    Stutter1On = true;
+                    Stutter2On = false;
+                    Stutter3On = false;
+                    Stutter4On = false;
+                } if (stlevel == 2) {
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in normal stuttering mode.");
+                    Stutter1On = false;
+                    Stutter2On = true;
+                    Stutter3On = false;
+                    Stutter4On = false;
+                } if (stlevel == 3) {
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in heavy stuttering mode.");
+                    Stutter1On = false;
+                    Stutter2On = false;
+                    Stutter3On = true;
+                    Stutter4On = false;
+                } if (stlevel == 4) {
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in total stuttering mode.");
+                    Stutter1On = false;
+                    Stutter2On = false;
+                    Stutter3On = false;
+                    Stutter4On = true;
+                }
+            }
         } else if (content.indexOf("/superdice") == 0) {
             var sides = content.substring(10).trim();
             if ((sides < 2) || (sides > 1000000000)) sides = 6;
@@ -4853,7 +4853,7 @@ async function NEWmenu() {
                 }]
             });
         } else if (content.indexOf("/talk") == 0) {
-             if (content.endsWith("/talk")) {
+            if (content.endsWith("/talk")) {
                 ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: The talk command must be followed by a number between -1 and 8.\n" +
                     " \n" +
@@ -4869,36 +4869,36 @@ async function NEWmenu() {
                     "7 very heavy gag talk\n" +
                     "8 total gag talk"
                 );
-             } else {
-                 var gaglevel = content.substring(5).trim();
-                 ElementValue("InputChat", "");
-                     if (gaglevel == -1) {            
-                         if (this.BabyTalkOn == false || this.BabyTalkOn == undefined) {  
-                             ChatRoomSendLocal("Quick-AccessMenu2: You are now in baby talk mode.");
-                             GagTalkOn = false;                  
-                             BabyTalkOn = true;
-                             OLDmenu();
-                         }
-                     } 
-                     if (gaglevel == 0) { 
-                         ChatRoomSendLocal("Quick-AccessMenu2: Back to normal talk mode.");
-                         BabyTalkOn = false;
-                         GagTalkOn = false;
-                         OLDmenu();
-                     } 
-                     if ((gaglevel > 0) && (gaglevel < 9)) {  
-                         if (this.GagTalkOn == false || this.GagTalkOn == undefined)  { 
-                             BabyTalkOn = false;  
-                             gl = gaglevel;                  
-                             GagTalkOn = true;                  
-                         } else {
-                             GagTalkOn = false;   
-                             gl = gaglevel;                  
-                             GagTalkOn = true;
-                         } 
-                     ChatRoomSendLocal("Quick-AccessMenu2: You are now in gag talk mode.");
-                     }
-              }
+            } else {
+                var gaglevel = content.substring(5).trim();
+                ElementValue("InputChat", "");
+                if (gaglevel == -1) {
+                    if (this.BabyTalkOn == false || this.BabyTalkOn == undefined) {
+                        ChatRoomSendLocal("Quick-AccessMenu2: You are now in baby talk mode.");
+                        GagTalkOn = false;
+                        BabyTalkOn = true;
+                        OLDmenu();
+                    }
+                }
+                if (gaglevel == 0) {
+                    ChatRoomSendLocal("Quick-AccessMenu2: Back to normal talk mode.");
+                    BabyTalkOn = false;
+                    GagTalkOn = false;
+                    OLDmenu();
+                }
+                if ((gaglevel > 0) && (gaglevel < 9)) {
+                    if (this.GagTalkOn == false || this.GagTalkOn == undefined) {
+                        BabyTalkOn = false;
+                        gl = gaglevel;
+                        GagTalkOn = true;
+                    } else {
+                        GagTalkOn = false;
+                        gl = gaglevel;
+                        GagTalkOn = true;
+                    }
+                    ChatRoomSendLocal("Quick-AccessMenu2: You are now in gag talk mode.");
+                }
+            }
         } else if (content.indexOf("/theme") == 0) {
             var theme = content.substring(6).trim();
             if ((theme > -1) && (theme < 4)) {
@@ -5258,9 +5258,9 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ServerSend("ChatRoomChat", {
@@ -5285,9 +5285,9 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ServerSend("ChatRoomChat", {
@@ -5315,9 +5315,9 @@ async function NEWmenu() {
             };
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ServerSend("ChatRoomChat", {
@@ -5386,10 +5386,10 @@ async function NEWmenu() {
             }
         } else if (content.indexOf("/unrestrict") == 0) {
             if (content.includes("soft")) {
-                InventoryGroupIsBlocked = function(C, GroupName) {
+                InventoryGroupIsBlocked = function (C, GroupName) {
                     return false;
                 }
-                InventoryPrerequisiteMessage = function(C, Prerequisit) {
+                InventoryPrerequisiteMessage = function (C, Prerequisit) {
                     return "";
                 }
                 Player.GameplaySettings.BlindDisableExamine = false;
@@ -5406,28 +5406,28 @@ async function NEWmenu() {
                     "Quick-AccessMenu2: Unrestricted totally. Can do most things you couldn't do before.\n" +
                     "Store also includes hidden items. This can only be reset via a full relog."
                 );
-                Player.CanInteract = function() {
+                Player.CanInteract = function () {
                     return true;
                 }
-                Player.CanWalk = function() {
+                Player.CanWalk = function () {
                     return true;
                 }
-                Player.CanTalk = function() {
+                Player.CanTalk = function () {
                     return true;
                 }
-                Player.IsPlugged = function() {
+                Player.IsPlugged = function () {
                     return false;
                 }
-                Player.IsVulvaChaste = function() {
+                Player.IsVulvaChaste = function () {
                     return false;
                 }
-                Player.CanChange = function() {
+                Player.CanChange = function () {
                     return true;
                 }
-                InventoryGroupIsBlocked = function(C, GroupName) {
+                InventoryGroupIsBlocked = function (C, GroupName) {
                     return false;
                 }
-                InventoryPrerequisiteMessage = function(C, Prerequisit) {
+                InventoryPrerequisiteMessage = function (C, Prerequisit) {
                     return "";
                 }
                 Player.GameplaySettings.BlindDisableExamine = false;
@@ -5435,15 +5435,15 @@ async function NEWmenu() {
                     if (e.Value < 0) e.Value = 1;
                 });
                 Player.Inventory.forEach(item => item.Asset.Enable = true);
-                DialogHasKey = function(C, Item) {
+                DialogHasKey = function (C, Item) {
                     return true
                 }
-                StruggleLockPickProgressStart = function(C, Item) {
+                StruggleLockPickProgressStart = function (C, Item) {
                     InventoryUnlock(CurrentCharacter, CurrentCharacter.FocusGroup.Name);
                     ChatRoomCharacterItemUpdate(CurrentCharacter, CurrentCharacter.FocusGroup.Name);
                     DialogLeave()
                 }
-                StruggleProgressStart = function(C, PrevItem, NextItem) {
+                StruggleProgressStart = function (C, PrevItem, NextItem) {
                     if (InventoryGet(CurrentCharacter, CurrentCharacter.FocusGroup.Name) == null) {
                         if (C != Player || PrevItem == null || ((PrevItem != null) && (!InventoryItemHasEffect(PrevItem, "Lock", true) || DialogCanUnlock(C, PrevItem)) && ((Player.CanInteract() && !InventoryItemHasEffect(PrevItem, "Mounted", true)) || StruggleStrengthGetDifficulty(C, PrevItem, NextItem).auto >= 0))) {
                             StruggleProgressCurrentMinigame = "Strength";
@@ -5465,23 +5465,23 @@ async function NEWmenu() {
                 );
             } else if (content.includes("reset")) {
                 ChatRoomSendLocal("Quick-AccessMenu2: Unrestrict reset.");
-                Player.CanInteract = function() {
+                Player.CanInteract = function () {
                     return (this.Effect.indexOf("Block") < 0)
                 }
-                Player.CanTalk = function() {
+                Player.CanTalk = function () {
                     (this.Effect.indexOf("GagVeryLight") < 0) &&
-                    (this.Effect.indexOf("GagLight") < 0) &&
-                    (this.Effect.indexOf("GagEasy") < 0) &&
-                    (this.Effect.indexOf("GagNormal") < 0) &&
-                    (this.Effect.indexOf("GagMedium") < 0) &&
-                    (this.Effect.indexOf("GagHeavy") < 0) &&
-                    (this.Effect.indexOf("GagVeryHeavy") < 0) &&
-                    (this.Effect.indexOf("GagTotal") < 0) &&
-                    (this.Effect.indexOf("GagTotal2") < 0) &&
-                    (this.Effect.indexOf("GagTotal3") < 0) &&
-                    (this.Effect.indexOf("GagTotal4") < 0)
+                        (this.Effect.indexOf("GagLight") < 0) &&
+                        (this.Effect.indexOf("GagEasy") < 0) &&
+                        (this.Effect.indexOf("GagNormal") < 0) &&
+                        (this.Effect.indexOf("GagMedium") < 0) &&
+                        (this.Effect.indexOf("GagHeavy") < 0) &&
+                        (this.Effect.indexOf("GagVeryHeavy") < 0) &&
+                        (this.Effect.indexOf("GagTotal") < 0) &&
+                        (this.Effect.indexOf("GagTotal2") < 0) &&
+                        (this.Effect.indexOf("GagTotal3") < 0) &&
+                        (this.Effect.indexOf("GagTotal4") < 0)
                 }
-                ChatSearchMuffle = function(Text) {
+                ChatSearchMuffle = function (Text) {
                     let ret = Text;
                     if (Player.ImmersionSettings && Player.ImmersionSettings.ChatRoomMuffle && Player.GetBlindLevel() > 0) {
                         ret = SpeechGarbleByGagLevel(Player.GetBlindLevel() * Player.GetBlindLevel(), Text, true);
@@ -5490,56 +5490,56 @@ async function NEWmenu() {
                     }
                     return ret;
                 }
-                Player.CanWalk = function() {
+                Player.CanWalk = function () {
                     return (
                         (this.Effect.indexOf("Freeze") < 0) &&
                         (this.Effect.indexOf("Tethered") < 0) &&
                         ((this.Pose == null) || (this.Pose.indexOf("Kneel") < 0) || (this.Effect.indexOf("KneelFreeze") < 0)))
                 }
-                Player.IsPlugged = function() {
+                Player.IsPlugged = function () {
                     return (this.Effect.indexOf("IsPlugged") >= 0)
                 }
-                Player.IsVulvaChaste = function() {
+                Player.IsVulvaChaste = function () {
                     return (this.Effect.indexOf("Chaste") >= 0)
                 }
-                Player.CanKneel = function() {
+                Player.CanKneel = function () {
                     return CharacterCanKneel(this)
                 }
                 Player.GetBlindLevel = function (eyesOnly = false) {
-		    let blindLevel = 0;
-		    const eyes1 = InventoryGet(this, "Eyes");
-	            const eyes2 = InventoryGet(this, "Eyes2");
-		    if (eyes1 && eyes1.Property && eyes1.Property.Expression && eyes2 && eyes2.Property && eyes2.Property.Expression) {
-		        if ((eyes1.Property.Expression === "Closed") && (eyes2.Property.Expression === "Closed")) {
-			    blindLevel += DialogFacialExpressionsSelectedBlindnessLevel;
-			}
-		    }  
-		    if (!eyesOnly) {
-			if (this.Effect.includes("BlindHeavy")) blindLevel += 3;
-			else if (this.Effect.includes("BlindNormal")) blindLevel += 2;
-			else if (this.Effect.includes("BlindLight")) blindLevel += 1;
-			if (InventoryCraftCount(this, "Thick") > 0) blindLevel++;
-			if (InventoryCraftCount(this, "Thin") > 0) blindLevel--;
-		    }
-		    blindLevel = Math.min(3, blindLevel);
-		    if (this.IsPlayer() && this.GameplaySettings && this.GameplaySettings.SensDepChatLog == "SensDepLight") blindLevel = Math.min(2, blindLevel);
-		    return blindLevel;
-		}
-                Player.CanChange = function(Pose) {
+                    let blindLevel = 0;
+                    const eyes1 = InventoryGet(this, "Eyes");
+                    const eyes2 = InventoryGet(this, "Eyes2");
+                    if (eyes1 && eyes1.Property && eyes1.Property.Expression && eyes2 && eyes2.Property && eyes2.Property.Expression) {
+                        if ((eyes1.Property.Expression === "Closed") && (eyes2.Property.Expression === "Closed")) {
+                            blindLevel += DialogFacialExpressionsSelectedBlindnessLevel;
+                        }
+                    }
+                    if (!eyesOnly) {
+                        if (this.Effect.includes("BlindHeavy")) blindLevel += 3;
+                        else if (this.Effect.includes("BlindNormal")) blindLevel += 2;
+                        else if (this.Effect.includes("BlindLight")) blindLevel += 1;
+                        if (InventoryCraftCount(this, "Thick") > 0) blindLevel++;
+                        if (InventoryCraftCount(this, "Thin") > 0) blindLevel--;
+                    }
+                    blindLevel = Math.min(3, blindLevel);
+                    if (this.IsPlayer() && this.GameplaySettings && this.GameplaySettings.SensDepChatLog == "SensDepLight") blindLevel = Math.min(2, blindLevel);
+                    return blindLevel;
+                }
+                Player.CanChange = function (Pose) {
                     return CharacterCanChangeToPose(this, Pose)
                 }
-                InventoryGroupIsBlocked = function(C, GroupName, Activity) {
+                InventoryGroupIsBlocked = function (C, GroupName, Activity) {
                     if (InventoryGroupIsBlockedForCharacter(C, GroupName, Activity)) return true;
                     if ((C.ID != 0) && Player.IsEnclose()) return true;
                     return false;
                 }
-                InventoryPrerequisiteMessage = function(C, Prerequisit) {
+                InventoryPrerequisiteMessage = function (C, Prerequisit) {
                     return "";
                 } //too long to restore
                 Player.GameplaySettings.BlindDisableExamine = false; //no point
                 Player.Inventory.forEach(item => item.Asset.Enable = true); //can't be
                 Player.Inventory.forEach(item => item.Asset.Wear = true); //can't be
-                DialogHasKey = function(C, Item) {
+                DialogHasKey = function (C, Item) {
                     if (InventoryGetItemProperty(Item, "SelfUnlock") == false && (!Player.CanInteract() || C.ID == 0)) return false;
                     if (C.IsOwnedByPlayer() && InventoryAvailable(Player, "OwnerPadlockKey", "ItemMisc") && Item.Asset.Enable) return true;
                     const lock = InventoryGetLock(Item);
@@ -5557,7 +5557,7 @@ async function NEWmenu() {
                             } else return true;
                         } return false;
                 }
-                StruggleStrengthStart = function(C, PrevItem, NextItem) {
+                StruggleStrengthStart = function (C, PrevItem, NextItem) {
                     var StruggleDiff = StruggleStrengthGetDifficulty(C, PrevItem, NextItem);
                     var S = StruggleDiff.difficulty;
                     if ((PrevItem && PrevItem.Asset) || (NextItem && NextItem.Asset)) {
@@ -5587,7 +5587,7 @@ async function NEWmenu() {
                         DialogAllowFluids = ((StruggleProgressAuto < 0) && (StruggleProgressChallenge > 0) && (C.ID == 0) && ((InventoryGet(C, "Fluids") == null) || (InventoryGet(C, "Fluids").Property == null) || (InventoryGet(C, "Fluids").Property.Expression == null)));
                     }
                 }
-                StruggleProgressStart = function(C, PrevItem, NextItem) {
+                StruggleProgressStart = function (C, PrevItem, NextItem) {
                     if (InventoryGet(CurrentCharacter, CurrentCharacter.FocusGroup.Name) == null) {
                         if (C != Player || PrevItem == null || ((PrevItem != null) && (!InventoryItemHasEffect(PrevItem, "Lock", true) || DialogCanUnlock(C, PrevItem)) && ((Player.CanInteract() && !InventoryItemHasEffect(PrevItem, "Mounted", true)) || StruggleStrengthGetDifficulty(C, PrevItem, NextItem).auto >= 0))) {
                             StruggleProgressCurrentMinigame = "Strength";
@@ -5696,17 +5696,17 @@ async function NEWmenu() {
                                 Item.Property.LockPickSeed = CommonConvertArrayToString(StruggleLockPickOrder);
                                 StruggleLockPickTotalTries = 0;
                             }
-                        else {
-                            var conv = CommonConvertStringToArray(Item.Property.LockPickSeed);
-                            for (let PP = 0; PP < conv.length; PP++) {
-                                if (typeof conv[PP] != "number") {
-                                    Item.Property.LockPickSeed = CommonConvertArrayToString(StruggleLockPickOrder);
-                                    conv = StruggleLockPickOrder;
-                                    break;
+                            else {
+                                var conv = CommonConvertStringToArray(Item.Property.LockPickSeed);
+                                for (let PP = 0; PP < conv.length; PP++) {
+                                    if (typeof conv[PP] != "number") {
+                                        Item.Property.LockPickSeed = CommonConvertArrayToString(StruggleLockPickOrder);
+                                        conv = StruggleLockPickOrder;
+                                        break;
+                                    }
                                 }
+                                StruggleLockPickOrder = conv;
                             }
-                            StruggleLockPickOrder = conv;
-                        }
                         var PickingImpossible = false;
                         if (S < -6 && LockPickingImpossible) {
                             PickingImpossible = true;
@@ -5724,9 +5724,9 @@ async function NEWmenu() {
             var targetname = content.substring(10).trim();
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 target[0].OnlineSharedSettings.AllowFullWardrobeAccess = true;
@@ -5738,9 +5738,9 @@ async function NEWmenu() {
             var targetname = content.substring(8).trim();
             var targetfinder = new RegExp('^' + targetname + '', 'i');
             var target = ChatRoomCharacter.filter(A => (A.Name.match(targetfinder)));
-	    if (target[0] == null) {
-                    var targetnumber = parseInt(targetname);
-                    target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
+            if (target[0] == null) {
+                var targetnumber = parseInt(targetname);
+                target[0] = ChatRoomCharacter.find((x) => x.MemberNumber === targetnumber);
             };
             if (target[0] != null) {
                 ChatRoomTargetMemberNumber = target[0].MemberNumber;
@@ -5879,7 +5879,7 @@ async function NEWmenu() {
                     "Content": content,
                     "Type": "Chat"
                 });
-                ElementValue("InputChat", "");    
+                ElementValue("InputChat", "");
             } else {
                 OLDmenu()
             }
@@ -5894,19 +5894,20 @@ var ChatRoomSendChat = NEWmenu;
 //below is additional stuff
 
 //greeting message.
-ChatCommandGreeting = function(data) {
+ChatCommandGreeting = function (data) {
     if (CurrentScreen == "ChatRoom" && data.Content == "ServerEnter") {
-	Player.RestrictionSettings.BypassNPCPunishments = true;
-	ChatRoomSendLocal(
-                    "Quick-AccessMenu2 - version 1.5.0: Ready, type <b>/help</b> for general menu.\n" +
-                    "Use <b>/help new</b> to get info about changes in current QAM version.\n" +
-                    "For any inquiries, join https://discord.gg/YukepB6RVp\n" +
-		    "Note: NPC punishments are disabled."
-                );   	    	  	    	    
+        Player.RestrictionSettings.BypassNPCPunishments = true;
+        ChatRoomSendLocal(
+            "Quick-AccessMenu2 - version 1.5.0: Ready, type <b>/help</b> for general menu.\n" +
+            "Use <b>/help new</b> to get info about changes in current QAM version.\n" +
+            "For any inquiries, join https://discord.gg/YukepB6RVp\n" +
+            "Note: NPC punishments are disabled."
+        );
         ServerSocket.off('ChatRoomMessage', ChatCommandGreeting)
     }
 }
-setTimeout(function() {
+
+setTimeout(function () {
     ServerSocket.on('ChatRoomMessage', ChatCommandGreeting);
 }, 5000);
 
@@ -5980,187 +5981,187 @@ function consoleWhisper() {
 };
 
 function gagSpeak() {
-     OldSpeechGarble = SpeechGarble;
-     SpeechGarble = function(C,CD,NoDeaf){
-         origin = CD;
-         out  = OldSpeechGarble(C,CD,NoDeaf)
-         var GagEffect = 0;
-         GagEffect += SpeechGetGagLevel(C, "ItemEars");
-         GagEffect += SpeechGetGagLevel(C, "ItemMouth");
-         GagEffect += SpeechGetGagLevel(C, "ItemMouth2");
-         GagEffect += SpeechGetGagLevel(C, "ItemMouth3");
-         GagEffect += SpeechGetGagLevel(C, "ItemHead");
-         GagEffect += SpeechGetGagLevel(C, "ItemHood");
-         GagEffect += SpeechGetGagLevel(C, "ItemNeck");
-         GagEffect += SpeechGetGagLevel(C, "ItemDevices");
-         if((GagEffect>0 || Player.GetDeafLevel()>0) && origin.charAt(0)!='('){
-              out = out+' ('+ origin + ')';
-         } 
-         return out;
+    OldSpeechGarble = SpeechGarble;
+    SpeechGarble = function (C, CD, NoDeaf) {
+        origin = CD;
+        out = OldSpeechGarble(C, CD, NoDeaf)
+        var GagEffect = 0;
+        GagEffect += SpeechGetGagLevel(C, "ItemEars");
+        GagEffect += SpeechGetGagLevel(C, "ItemMouth");
+        GagEffect += SpeechGetGagLevel(C, "ItemMouth2");
+        GagEffect += SpeechGetGagLevel(C, "ItemMouth3");
+        GagEffect += SpeechGetGagLevel(C, "ItemHead");
+        GagEffect += SpeechGetGagLevel(C, "ItemHood");
+        GagEffect += SpeechGetGagLevel(C, "ItemNeck");
+        GagEffect += SpeechGetGagLevel(C, "ItemDevices");
+        if ((GagEffect > 0 || Player.GetDeafLevel() > 0) && origin.charAt(0) != '(') {
+            out = out + ' (' + origin + ')';
+        }
+        return out;
     }
     NewSpeechGarble = SpeechGarble;
 }
 
-function GetBlindLevel0 () {
+function GetBlindLevel0() {
     let blindLevel = 0;
     return blindLevel;
 }
 
-function GetBlindLevel1 () {
+function GetBlindLevel1() {
     let blindLevel = 1;
     return blindLevel;
 }
 
-function GetBlindLevel2 () {
+function GetBlindLevel2() {
     let blindLevel = 2;
     return blindLevel;
 }
 
-function GetBlindLevel3 () {
+function GetBlindLevel3() {
     let blindLevel = 3;
     return blindLevel;
 }
 
-function GetBlurLevel0 () {
+function GetBlurLevel0() {
     let blurLevel = 0;
     return blurLevel;
 }
 
-function GetBlurLevel1 () {
+function GetBlurLevel1() {
     let blurLevel = 3;
     return blurLevel;
 }
 
-function GetBlurLevel2 () {
+function GetBlurLevel2() {
     let blurLevel = 8;
     return blurLevel;
 }
 
-function GetBlurLevel3 () {
+function GetBlurLevel3() {
     let blurLevel = 20;
     return blurLevel;
 }
 
-function GetBlurLevel4 () {
+function GetBlurLevel4() {
     let blurLevel = 50;
     return blurLevel;
 }
 
-function GetDeafLevel0 () {
+function GetDeafLevel0() {
     let deafLevel = 0;
     return deafLevel;
 }
 
-function GetDeafLevel1 () {
+function GetDeafLevel1() {
     let deafLevel = 1;
     return deafLevel;
 }
 
-function GetDeafLevel2 () {
+function GetDeafLevel2() {
     let deafLevel = 2;
     return deafLevel;
 }
 
-function GetDeafLevel3 () {
+function GetDeafLevel3() {
     let deafLevel = 3;
     return deafLevel;
 }
 
-function GetDeafLevel4 () {
+function GetDeafLevel4() {
     let deafLevel = 4;
     return deafLevel;
 }
 
 function StutterTalk1(CD) {
-	if (CD == null) CD = "";
-	var Par = false;
-	var CS = 1;
-	var Seed = CD.length;
-	for (let L = 0; L < CD.length; L++) {
-	    var H = CD.charAt(L).toLowerCase();
-	    if (H == "(") Par = true;
-	    if (!Par && CS >= 0 && (H.match(/[[a-z?-??]/i))) {
-	        var R = Math.sin(Seed++) * 10000;
-		   R = R - Math.floor(R);
-		   R = Math.floor(R * 10) + 2;
-		   if (CS == 1 || R >= 10) {
-		       CD = CD.substring(0, L) + CD.charAt(L) + "-" + CD.substring(L, CD.length);
-			  L += 2;
-		   }
-		   CS = -1;
-	     }
-		if (H == " ") CS = 0;
-		}
-	return CD;
+    if (CD == null) CD = "";
+    var Par = false;
+    var CS = 1;
+    var Seed = CD.length;
+    for (let L = 0; L < CD.length; L++) {
+        var H = CD.charAt(L).toLowerCase();
+        if (H == "(") Par = true;
+        if (!Par && CS >= 0 && (H.match(/[[a-z?-??]/i))) {
+            var R = Math.sin(Seed++) * 10000;
+            R = R - Math.floor(R);
+            R = Math.floor(R * 10) + 2;
+            if (CS == 1 || R >= 10) {
+                CD = CD.substring(0, L) + CD.charAt(L) + "-" + CD.substring(L, CD.length);
+                L += 2;
+            }
+            CS = -1;
+        }
+        if (H == " ") CS = 0;
+    }
+    return CD;
 }
 
 function StutterTalk2(CD) {
-	if (CD == null) CD = "";
-	var Par = false;
-	var CS = 1;
-	var Seed = CD.length;
-	for (let L = 0; L < CD.length; L++) {
-	    var H = CD.charAt(L).toLowerCase();
-	    if (H == "(") Par = true;
-	    if (!Par && CS >= 0 && (H.match(/[[a-z?-??]/i))) {
-	        var R = Math.sin(Seed++) * 10000;
-		   R = R - Math.floor(R);
-		   R = Math.floor(R * 10) + 4;
-		   if (CS == 1 || R >= 10) {
-		       CD = CD.substring(0, L) + CD.charAt(L) + "-" + CD.substring(L, CD.length);
-			  L += 2;
-		   }
-		   CS = -1;
-	     }
-		if (H == " ") CS = 0;
-		}
-	return CD;
+    if (CD == null) CD = "";
+    var Par = false;
+    var CS = 1;
+    var Seed = CD.length;
+    for (let L = 0; L < CD.length; L++) {
+        var H = CD.charAt(L).toLowerCase();
+        if (H == "(") Par = true;
+        if (!Par && CS >= 0 && (H.match(/[[a-z?-??]/i))) {
+            var R = Math.sin(Seed++) * 10000;
+            R = R - Math.floor(R);
+            R = Math.floor(R * 10) + 4;
+            if (CS == 1 || R >= 10) {
+                CD = CD.substring(0, L) + CD.charAt(L) + "-" + CD.substring(L, CD.length);
+                L += 2;
+            }
+            CS = -1;
+        }
+        if (H == " ") CS = 0;
+    }
+    return CD;
 }
 
 function StutterTalk3(CD) {
-	if (CD == null) CD = "";
-	var Par = false;
-	var CS = 1;
-	var Seed = CD.length;
-	for (let L = 0; L < CD.length; L++) {
-	    var H = CD.charAt(L).toLowerCase();
-	    if (H == "(") Par = true;
-	    if (!Par && CS >= 0 && (H.match(/[[a-z?-??]/i))) {
-	        var R = Math.sin(Seed++) * 10000;
-		   R = R - Math.floor(R);
-		   R = Math.floor(R * 10) + 6;
-		   if (CS == 1 || R >= 10) {
-		       CD = CD.substring(0, L) + CD.charAt(L) + "-" + CD.substring(L, CD.length);
-			  L += 2;
-		   }
-		   CS = -1;
-	     }
-		if (H == " ") CS = 0;
-		}
-	return CD;
+    if (CD == null) CD = "";
+    var Par = false;
+    var CS = 1;
+    var Seed = CD.length;
+    for (let L = 0; L < CD.length; L++) {
+        var H = CD.charAt(L).toLowerCase();
+        if (H == "(") Par = true;
+        if (!Par && CS >= 0 && (H.match(/[[a-z?-??]/i))) {
+            var R = Math.sin(Seed++) * 10000;
+            R = R - Math.floor(R);
+            R = Math.floor(R * 10) + 6;
+            if (CS == 1 || R >= 10) {
+                CD = CD.substring(0, L) + CD.charAt(L) + "-" + CD.substring(L, CD.length);
+                L += 2;
+            }
+            CS = -1;
+        }
+        if (H == " ") CS = 0;
+    }
+    return CD;
 }
 
 function StutterTalk4(CD) {
-	if (CD == null) CD = "";
-	var Par = false;
-	var CS = 1;
-	var Seed = CD.length;
-	for (let L = 0; L < CD.length; L++) {
-	    var H = CD.charAt(L).toLowerCase();
-	    if (H == "(") Par = true;
-	    if (!Par && CS >= 0 && (H.match(/[[a-z?-??]/i))) {
-	        var R = Math.sin(Seed++) * 10000;
-		   R = R - Math.floor(R);
-		   R = Math.floor(R * 10) + 8;
-		   if (CS == 1 || R >= 10) {
-		       CD = CD.substring(0, L) + CD.charAt(L) + "-" + CD.substring(L, CD.length);
-			  L += 2;
-		   }
-		   CS = -1;
-	     }
-		if (H == " ") CS = 0;
-		}
-	return CD;
+    if (CD == null) CD = "";
+    var Par = false;
+    var CS = 1;
+    var Seed = CD.length;
+    for (let L = 0; L < CD.length; L++) {
+        var H = CD.charAt(L).toLowerCase();
+        if (H == "(") Par = true;
+        if (!Par && CS >= 0 && (H.match(/[[a-z?-??]/i))) {
+            var R = Math.sin(Seed++) * 10000;
+            R = R - Math.floor(R);
+            R = Math.floor(R * 10) + 8;
+            if (CS == 1 || R >= 10) {
+                CD = CD.substring(0, L) + CD.charAt(L) + "-" + CD.substring(L, CD.length);
+                L += 2;
+            }
+            CS = -1;
+        }
+        if (H == " ") CS = 0;
+    }
+    return CD;
 }
 
 function updateBackground() {
@@ -6212,6 +6213,7 @@ function RunExpressionAnimation(list) {
 //core functionaliy moved to: /speak /mouth /speech
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Moaner
 //ChatRoom
 /*var backupChatRoomSendChat;
@@ -6219,6 +6221,7 @@ var backupActivityOrgasmPrepare;
 var backupActivityOrgasmStart;
 var backupChatRoomMessage;
 var backupChatRoomFirstTimeHelp;*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var M_MOANER_scriptOn = true;
 let backupChatRoomMessage = ChatRoomMessage;
@@ -6545,7 +6548,7 @@ function showM_MOANER_spankStatus() {
 
 //MoanerUtils
 
-function M_MOANER_logDebug(msg) {}
+function M_MOANER_logDebug(msg) { }
 
 function startDebug() {
     M_MOANER_logDebug = (msg) => {
@@ -6612,16 +6615,18 @@ function M_MOANER_shuffle(array, seed) {
     return array;
 }
 
+// 消息被改了
 function M_MOANER_sendMessageToWearer(msg) {
-    ServerSend("ChatRoomChat", {
-        Type: "Action",
-        Content: "gag",
-        Target: Player.MemberNumber,
-        Dictionary: [{
-            Tag: "gag",
-            Text: msg
-        }],
-    });
+    // ServerSend("ChatRoomChat", {
+    //     Type: "Action",
+    //     Content: "gag",
+    //     Target: Player.MemberNumber,
+    //     Dictionary: [{
+    //         Tag: "gag",
+    //         Text: msg
+    //     }],
+    // });
+    ChatRoomSendLocal(msg);
 }
 
 function M_MOANER_getRandomNumber(seed) {
@@ -6640,13 +6645,22 @@ const basePainMoans=["Aie!","Aoouch!","Eek","ouch","Aow"];*/
 
 var M_MOANER_profileName = "default";
 
-M_MOANER_defaultMoans = {
+/*M_MOANER_defaultMoans = {
     "hot": ["n... Nyah\u2665", "Oooh", "mmmmmh!", "NYyaaA\u2665"],
     "medium": ["mm", "aaaah", "nyAh\u2665"],
     "light": ["nyah\u2665", "Aah!", "mh", "oh!\u2665", "mh\u2665"],
     "low": ["mh", "\u2665oh\u2665", "ah", "...\u2665"],
     "orgasm": ["Nya...Ny...NyaaAAaah!", "Mmmmh... MMmh... Hhhmmmm...", "Oooooh... Mmmmh... OooOOOOh!", "Mmmhnn... Nyhmm... Nyah!"],
     "pain": ["Aie!", "Aoouch!", "Aaaaie!", "Ouch", "Aow"]
+}*/
+
+M_MOANER_defaultMoans = {
+    "hot": ["嗯... 喵呜❤", "❤...咕噜咕噜~", "嗯~呼~!", "喵❤~~~"],
+    "medium": ["姆", "啊❤", "喵啊❤"],
+    "light": ["唔姆", "啊啊❤", "嗯", "喵~", "唔啊❤"],
+    "low": ["啊", "唔啊", "嗯嗯", "啊呜"],
+    "orgasm": ["喵...喵...喵啊❤~", "嗯啊...嗯嗯❤... 喵嗯❤...", "啊... 嗯... 嗯嗯❤ ... 呼~!", "嗯喵... 嗯嗯... 喵❤~"],
+    "pain": ["喵呜!!!", "呜...好疼!!!", "呲咝!", "呜噜呜撸~", "喵 >.<"]
 }
 
 M_MOANER_customMoans = {
@@ -6733,7 +6747,7 @@ function M_MOANER_reactionExcitation(C, CD) {
 
         // Validates that the preferences allow stuttering
         /*if ((C.ArousalSettings == null) || (C.ArousalSettings.AffectStutter == null) || (C.ArousalSettings.AffectStutter != "None")) {
-        	return M_MOANER_applyMoanToMsg(C,CD);
+            return M_MOANER_applyMoanToMsg(C,CD);
         }*/
         return M_MOANER_applyMoanToMsg(C, CD);
     }
@@ -7102,32 +7116,46 @@ function IsStimulated(C) {
     return false;
 }
 
-//MoanerProfiles
 
-vnekoMoans={
-	"hot":["嗯... 喵呜♥","咕噜咕噜~","嗯~呼~!","喵❤~~~"],
-	"medium":["姆","啊❤","喵啊❤"],
-	"light":["唔姆❤","啊啊❤","嗯","喵~","唔啊❤"],
-	"low":["啊","❤唔啊❤","嗯嗯","...♥"],
-	"orgasm":["喵...喵...喵啊❤!","嗯啊...嗯嗯❤... 喵嗯❤...","啊... 嗯... 嗯嗯❤ ... 呼~!","嗯喵... 嗯嗯... 喵❤~!"],
-	"pain":["你干吗！","再打猫就咬你了!","变态!","可恶","嗷呜~", "坏人！！！"]
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  MoanerProfiles
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+honokaMoans = {
+    "hot": [],
+    "medium": [],
+    "light": [],
+    "low": [],
+    "orgasm": [],
+    "pain": ["坏果子...", "笨蛋...!", "果子是绒布球...", "哼...绒布球也来欺负猫了...", "给你一猫爪...", "果子狗...猫不会屈服的！"]
 }
+M_MOANER_addMoansProfile("honoka", honokaMoans);
 
+vnekoMoans = {
+    "hot": [],
+    "medium": [],
+    "light": [],
+    "low": [],
+    "orgasm": ["喵...喵...喵啊❤", "嗯啊...嗯嗯❤...", "啊... 嗯... 嗯嗯❤ ... 呼~", "嗯喵... 嗯嗯... 喵❤", "阿巴阿巴❤"],
+    "pain": ["啊哈？", "再打猫咬你哦", "变态!", "给你一猫爪...", "喵呜(炸毛)！", "呜...喵...", "笨蛋...没吃小鱼干吗？", "这可是很疼的...", "喵！...不要拿猫发泄啊！"]
+}
 M_MOANER_addMoansProfile("vneko", vnekoMoans);
 
-nekonyaMoans={
-	"hot":["嗯... 喵呜♥","咕噜咕噜~","嗯~呼~!","喵❤~~~"],
-	"medium":["姆","啊❤","喵啊❤"],
-	"light":["唔姆❤","啊啊❤","嗯","喵~","唔啊❤"],
-	"low":["啊","❤唔啊❤","嗯嗯","...♥"],
-	"orgasm":["喵...喵...喵啊❤!","嗯啊...嗯嗯❤... 喵嗯❤...","啊... 嗯... 嗯嗯❤ ... 呼~!","嗯喵... 嗯嗯... 喵❤~!"],
-	"pain":["喵呜!!!","再打猫就咬你了!","呲咝!","呜噜噜噜噜~","喵>.<!"]
+nekonyaMoans = {
+    "hot": ["嗯... 喵呜♥", "咕噜咕噜~", "嗯~呼~!", "喵❤~~~"],
+    "medium": ["姆", "啊❤", "喵啊❤"],
+    "light": ["唔姆❤", "啊啊❤", "嗯", "喵~", "唔啊❤"],
+    "low": ["啊", "❤唔啊❤", "嗯嗯", "...♥"],
+    "orgasm": ["喵...喵...喵啊❤!", "嗯啊...嗯嗯❤... 喵嗯❤...", "啊... 嗯... 嗯嗯❤ ... 呼~!", "嗯喵... 嗯嗯... 喵❤~!"],
+    "pain": ["喵呜!!!", "再打猫就咬你了!", "呲咝!", "呜噜噜噜噜~", "喵>.<"]
 }
+M_MOANER_addMoansProfile("nekonya", nekonyaMoans);
 
-M_MOANER_addMoansProfile("nekonya",nekonyaMoans);
 
 //dog
-M_MOANER_dogMoans = {
+EN_M_MOANER_dogMoans = {
     "hot": ["w... Wouuuf\u2665", "aouuh\u2665"],
     "medium": ["waaaf\u2665", "ky\u016b\u016b\n", "..wouf"],
     "light": ["Ouaff\u2665", "Aouh!", "Oua\u2665af", "Ky\u016bn\u2665"],
@@ -7135,12 +7163,12 @@ M_MOANER_dogMoans = {
     "orgasm": ["ouaf\u2665 O... Ouuw... Ouaaaa!!", "Mmmhnn... aaaa... Ouuuaaaaaf!!", "mmmh... Aouuuh.... Aouhhhh!"],
     "pain": ["Ka\u00ef!", "Aoouch!", "Kaaa\u00ef!", "Ouch", "Aow"]
 }
-M_MOANER_addMoansProfile("dog", M_MOANER_dogMoans);
+M_MOANER_addMoansProfile("ENDog", EN_M_MOANER_dogMoans);
 
 //fox
 //base: wif, yif, aouh
 //thanks to Noriko
-M_MOANER_foxMoans = {
+EN_M_MOANER_foxMoans = {
     "hot": ["w... Wiiif\u2665", "Yiiif\u2665"],
     "medium": ["wiiif\u2665", "Yiii", "..yif"],
     "light": ["Wiff\u2665", "Yif!", "yi\u2665iif", "Wiif"],
@@ -7148,11 +7176,11 @@ M_MOANER_foxMoans = {
     "orgasm": ["Wiff\u2665 W... Wiii... WIIF!!", "Mmmhnn... Wiiif... Yiiiif!!", "mmmh... Aouuuh.... Aouhhhh!"],
     "pain": []
 }
-M_MOANER_addMoansProfile("fox", M_MOANER_foxMoans);
+M_MOANER_addMoansProfile("ENFox", EN_M_MOANER_foxMoans);
 
 //mouse
 //base coui
-M_MOANER_mouseMoans = {
+EN_M_MOANER_mouseMoans = {
     "hot": ["Scouiiic\u2665", "couiiic\u2665"],
     "medium": ["scouiii\u2665", "Couyk", "..scoui"],
     "light": ["Scouii\u2665", "Coui!", "kouu\u2665ic", "Couic \u2665"],
@@ -7160,10 +7188,10 @@ M_MOANER_mouseMoans = {
     "orgasm": ["Couic\u2665 sc.. couIIIiic!!", "Mmmhnn... ooo... ouiiiic!!", "mmmh... Scouuu.... Scouiiic!"],
     "pain": []
 }
-M_MOANER_addMoansProfile("mouse", M_MOANER_mouseMoans);
+M_MOANER_addMoansProfile("ENMouse", EN_M_MOANER_mouseMoans);
 
 //neko
-M_MOANER_nekoMoans = {
+EN_M_MOANER_nekoMoans = {
     "hot": ["n... Nyah\u2665", "NYyaaA\u2665"],
     "medium": ["nyAh\u2665", "nyyy", "..yah"],
     "light": ["nyah\u2665", "Yah!", "myuh", "mh\u2665"],
@@ -7171,10 +7199,10 @@ M_MOANER_nekoMoans = {
     "orgasm": ["Nya...Ny...NyaaAAaah!", "Mmmhnn... Nyhmm... Nyah!", "mmmh... mmmeeeee.... meeeoooow!"],
     "pain": []
 }
-M_MOANER_addMoansProfile("neko", M_MOANER_nekoMoans);
+M_MOANER_addMoansProfile("ENNeko", EN_M_MOANER_nekoMoans);
 
 //pig
-M_MOANER_pigMoans = {
+EN_M_MOANER_pigMoans = {
     "hot": ["Gruiik\u2665", "gruik\u2665"],
     "medium": ["gruiii\u2665", "Gruik", "..Grui.."],
     "light": ["Grui\u2665", "Gruik!", "gruuiii\u2665ic", "gruik \u2665"],
@@ -7182,10 +7210,10 @@ M_MOANER_pigMoans = {
     "orgasm": ["Gru\u2665 gr.. gruiIIIiick!!", "Mmmhnn... uii... gruiiik!!", "mmmh... Gruiik.... Gruiiiiik!"],
     "pain": ["Gruuik!!", "Aoouch!", "Awo... gruik!", "Ouch", "Gruiiik"]
 }
-M_MOANER_addMoansProfile("pig", M_MOANER_pigMoans);
+M_MOANER_addMoansProfile("ENPig", EN_M_MOANER_pigMoans);
 
 //wildFox
-M_MOANER_wildFoxMoans = {
+EN_M_MOANER_wildFoxMoans = {
     "hot": ["w... Wiiif\u2665", "Yiiif\u2665", "Wa\u2665ouu"],
     "medium": ["wiiif\u2665", "Yiii", "..yif", "waouuu"],
     "light": ["Wiff\u2665", "Yif!", "yi\u2665iif", "Wiif", "waou"],
@@ -7193,7 +7221,7 @@ M_MOANER_wildFoxMoans = {
     "orgasm": ["WAAAAOUUUUUUUHHHHH!", "Mmmhnn... Wiiif... Yiiiif!!", "AOUUUUUH!", "WAHOOOOOOOUUUUH!", "WAAAAAAAAHH!", "WAAAAOUUUUUUUHHHHH!", "AOUUUUUH!", "WAHOOOOOOOUUUUH!", "WAAAAAAAAHH!"],
     "pain": []
 }
-M_MOANER_addMoansProfile("wildFox", M_MOANER_wildFoxMoans);
+M_MOANER_addMoansProfile("ENWildFox", EN_M_MOANER_wildFoxMoans);
 
 
 //BC-Diaper-Wetter
@@ -7837,7 +7865,7 @@ function diaperTick() {
 //pet bowl can not be rewritten.
 //wooden box can not be rewritten.
 //canvas hood can not be rewritetn.
-InventoryItemMiscWoodenSignLoad = function() {
+InventoryItemMiscWoodenSignLoad = function () {
     DynamicDrawLoadFont(InventoryItemMiscWoodenSignFont);
     var C = CharacterGetCurrent();
     var MustRefresh = false;
@@ -7857,7 +7885,7 @@ InventoryItemMiscWoodenSignLoad = function() {
     if (input2) input2.pattern = DynamicDrawTextInputPattern;
 }
 //
-InventoryItemNeckAccessoriesCustomCollarTagLoad = function() {
+InventoryItemNeckAccessoriesCustomCollarTagLoad = function () {
     var C = CharacterGetCurrent();
     var MustRefresh = false;
     if (DialogFocusItem.Property == null) DialogFocusItem.Property = {};
@@ -7874,7 +7902,7 @@ InventoryItemNeckAccessoriesCustomCollarTagLoad = function() {
     }
 }
 //
-InventoryItemNeckAccessoriesElectronicTagLoad = function() {
+InventoryItemNeckAccessoriesElectronicTagLoad = function () {
     var C = CharacterGetCurrent();
     var MustRefresh = false;
     if (DialogFocusItem.Property == null) DialogFocusItem.Property = {};
@@ -7892,7 +7920,7 @@ InventoryItemNeckAccessoriesElectronicTagLoad = function() {
 }
 
 //Auto enable patreon cheats. Also allows functionality for submissive mistress. If patched, blank functions.
-CheatValidate = function() {
+CheatValidate = function () {
     return true;
 };
 CheatAllow = true;
@@ -7917,7 +7945,7 @@ Asset.forEach(e => {
     if (e.Value < 0) e.Value = 1;
 });
 
-function ManagementCannotBeReleasedExtreme() {}
+function ManagementCannotBeReleasedExtreme() { }
 
 function ManagementCannotBreakUpLoverNPC(L) {
     return false
@@ -7927,19 +7955,19 @@ function ManagementCanBeClubMistress() {
     return true
 }
 
-function ManagementCannotBeClubMistress() {}
+function ManagementCannotBeClubMistress() { }
 
-function ManagementCannotBeClubMistressLaugh() {}
+function ManagementCannotBeClubMistressLaugh() { }
 
-function ManagementCannotBeClubMistressTime() {}
+function ManagementCannotBeClubMistressTime() { }
 
 function ManagementCanBeClubSlave() {
     return true
 }
 
-function ManagementCannotBeClubSlaveOwnerLock() {}
+function ManagementCannotBeClubSlaveOwnerLock() { }
 
-function ManagementCannotBeClubSlaveLoverLock() {}
+function ManagementCannotBeClubSlaveLoverLock() { }
 
 function AsylumEntranceIsWearingNurseClothes() {
     return true
@@ -7998,10 +8026,10 @@ function ChatRoomSyncItem(data) {
             if (item) {
                 CharacterAppearanceSetItem(
                     ChatRoomCharacter[C], data.Item.Group, item.Asset, item.Color, item.Difficulty, null, false);
-		        if (item.Craft != null) 
-			    for (let Char of ChatRoomCharacter)
-			        if (Char.MemberNumber === data.Source)
-				    InventoryCraft(Char, ChatRoomCharacter[C], data.Item.Group, item.Craft, false);
+                if (item.Craft != null)
+                    for (let Char of ChatRoomCharacter)
+                        if (Char.MemberNumber === data.Source)
+                            InventoryCraft(Char, ChatRoomCharacter[C], data.Item.Group, item.Craft, false);
                 InventoryGet(ChatRoomCharacter[C], data.Item.Group).Property = item.Property;
                 const diffMap = {};
                 for (const appearanceItem of ChatRoomCharacter[C].Appearance) {
@@ -8027,31 +8055,31 @@ function ChatRoomSyncItem(data) {
 }
 
 function DialogExtendItem(Item, SourceItem) {
-	const C = CharacterGetCurrent();
-	StruggleProgress = -1;
-	StruggleLockPickOrder = null;
-	DialogLockMenu = false;
-	DialogCraftingMenu = false;
-	DialogColor = null;
-	DialogFocusItem = Item;
-	DialogFocusSourceItem = SourceItem;
-	CommonDynamicFunction("Inventory" + Item.Asset.Group.Name + Item.Asset.Name + "Load()");
+    const C = CharacterGetCurrent();
+    StruggleProgress = -1;
+    StruggleLockPickOrder = null;
+    DialogLockMenu = false;
+    DialogCraftingMenu = false;
+    DialogColor = null;
+    DialogFocusItem = Item;
+    DialogFocusSourceItem = SourceItem;
+    CommonDynamicFunction("Inventory" + Item.Asset.Group.Name + Item.Asset.Name + "Load()");
 }
 
 function CharacterRefresh(C, Push, RefreshDialog = true) {
-	CharacterLoadEffect(C);
-	CharacterLoadPose(C);
-	CharacterLoadCanvas(C);
-	C.RunScripts = (!C.AccountName.startsWith('Online-') || !(Player.OnlineSettings && Player.OnlineSettings.DisableAnimations)) && (!Player.GhostList || Player.GhostList.indexOf(C.MemberNumber) == -1);
-	C.HasScriptedAssets = !!C.Appearance.find(CA => CA.Asset.DynamicScriptDraw);
-	if ((C.ID == 0) && (C.OnlineID != null) && ((Push == null) || (Push == true))) {
-		ChatRoomRefreshChatSettings();
-		ServerPlayerAppearanceSync();
-	}
-	var Current = CharacterGetCurrent();
-	if (Current && C.ID == Current.ID && RefreshDialog) {
-		CharacterRefreshDialog(C);
-	}
+    CharacterLoadEffect(C);
+    CharacterLoadPose(C);
+    CharacterLoadCanvas(C);
+    C.RunScripts = (!C.AccountName.startsWith('Online-') || !(Player.OnlineSettings && Player.OnlineSettings.DisableAnimations)) && (!Player.GhostList || Player.GhostList.indexOf(C.MemberNumber) == -1);
+    C.HasScriptedAssets = !!C.Appearance.find(CA => CA.Asset.DynamicScriptDraw);
+    if ((C.ID == 0) && (C.OnlineID != null) && ((Push == null) || (Push == true))) {
+        ChatRoomRefreshChatSettings();
+        ServerPlayerAppearanceSync();
+    }
+    var Current = CharacterGetCurrent();
+    if (Current && C.ID == Current.ID && RefreshDialog) {
+        CharacterRefreshDialog(C);
+    }
 }
 
 function CharacterNickname(C) {
@@ -8242,16 +8270,19 @@ function getCommand(commandName) {
     return command;
 }
 
-setTimeout(function() {
-    ServerSocket.on("ChatRoomMessage", function(data) {
+setTimeout(function () {
+    ServerSocket.on("ChatRoomMessage", function (data) {
         if (data.Content.startsWith("?")) {
             return;
         }
+        /**
+         * 
+         // 解析图片的，似乎和 BCE 冲突了
         if (tenorRe.test(data.Content)) {
             var content = data.Content.match(tenorRe);
             if (content) {
                 var link = content[0];
-		ServerSend("ChatRoomChat", {
+        ServerSend("ChatRoomChat", {
                         Content: "Beep",
                         Type: "Action",
                         Dictionary: [{
@@ -8292,18 +8323,21 @@ setTimeout(function() {
                     })
                 }
             }
-        } else if (tubeRe.test(data.Content)) {
+        } 
+        */
+        // YouTube
+        if (tubeRe.test(data.Content)) {
             var content = data.Content.match(tubeRe);
             if (content && content[5] && content[5].length == 11 && (content.includes("youtube.com") || content.includes("youtu.be"))) {
-		var lk = content[0];                        
+                var lk = content[0];
                 ServerSend("ChatRoomChat", {
-                        Content: "Beep",
-                        Type: "Action",
-                        Dictionary: [{
-                            Tag: "Beep",
-                            Text: ("A link for more fun: " + lk + " ")
-                        }]
-                }); 
+                    Content: "Beep",
+                    Type: "Action",
+                    Dictionary: [{
+                        Tag: "Beep",
+                        Text: ("A link for more fun: " + lk + " ")
+                    }]
+                });
                 var link = `https://www.youtube.com/embed/${content[5]}`;
                 var chatWindow = getChatWindowElement();
 
@@ -8354,9 +8388,9 @@ function ChatSearchJoin() { //rewrite chatroom join to house auto join
             if ((MouseX >= X) && (MouseX <= X + 630) && (MouseY >= Y) && (MouseY <= Y + 85)) {
                 var RoomName = ChatSearchResult[C].Name;
 
-                AutoJoin = function() {
+                AutoJoin = function () {
                     this.AutoJoinOn = true;
-                    setTimeout(function() {
+                    setTimeout(function () {
                         AutoJoin()
                     }, 1300);
                     ChatSearchLastQueryJoinTime = CommonTime();
@@ -8367,7 +8401,7 @@ function ChatSearchJoin() { //rewrite chatroom join to house auto join
                     });
                     ChatRoomPingLeashedPlayers();
                     if (CurrentScreen == "ChatRoom") {
-                        AutoJoin = function() {};
+                        AutoJoin = function () { };
                         this.AutoJoinOn = false;
                         ElementRemove("AutoJoinAlert");
                         IsOn = false;
