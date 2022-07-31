@@ -15,15 +15,6 @@
 // ==/UserScript==
 (typeof OLDmenu !== "undefined") && (ChatRoomSendChat = OLDmenu); //reset
 async function NEWmenu() {
-
-    function Neko_ChatRoomSendLocal(text) {
-        Neko_ChatRoomSendLocal(
-            "<div style='margin: 1.2em 0px;color:#2bbd7a'>" +
-                text +
-            "</div>"
-        );
-    }
-
     var content = ElementValue("InputChat").trim();
     //var tmpname = Player.Nickname;
 
@@ -32,7 +23,7 @@ async function NEWmenu() {
 
         if (content.indexOf("/help") == 0) {
             if (content.endsWith("/help")) {
-                Neko_ChatRoomSendLocal(
+                ChatRoomSendLocal(
                     "<b>Quick-AccessMenu2</b>: QAM help is organized into categories. Use <b>/help</b> (category). List of categories:\n" +
                     "<b>bondage</b> = commands related to bondage.\n" +
                     "<b>character</b> = commands related to your character.\n" +
